@@ -1,0 +1,20 @@
+﻿@using WebAppMaterialize.App.Services
+@using DataTools;
+
+<div class="progress">
+    <div class="determinate" style="width: @CloudDataTools.FileObject.PercentProcessed%"></div>
+</div>
+<p>Bytes processed: @CloudDataTools.FileObject.BytesProcessed.ToString("N0") (@CloudDataTools.FileObject.PercentProcessed %) / @CloudDataTools.FileObject.FileSize.ToString("N0")</p>
+
+@functions
+{
+    [Parameter] protected bool IsProcessFinished { get; set; } = false;
+    protected CloudDataTools CloudDataTools { get { return AppState.CloudDataTools; } }
+    [Parameter] protected AppState AppState { get; set; }
+
+    protected override void OnInit()
+    {
+        AppState.OnProgressBarChange += StateHasChanged;
+    }
+
+}

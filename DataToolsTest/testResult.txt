@@ -1,0 +1,735 @@
+Analysis result: 
+Column 1 
+IsNumber: True  
+IsLetter: False 
+Average length: 4 
+Maximun length: 4 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 1
+
+Analysis result: 
+Column 2 
+IsNumber: True  
+IsLetter: False 
+Average length: 7 
+Maximun length: 7 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.LatitudeOrLongitudeRecognizer: 0
+RecognizerTools.IPv4Recognizer: 0
+RecognizerTools.DateRecognizer: 0
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 1
+
+Analysis result: 
+Column 3 
+IsNumber: True  
+IsLetter: False 
+Average length: 8 
+Maximun length: 8 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.LatitudeOrLongitudeRecognizer: 0
+RecognizerTools.IPv4Recognizer: 0
+RecognizerTools.DateRecognizer: 1
+RecognizerTools.MoneyRecognizer: 0
+
+Analysis result: 
+Column 4 
+IsNumber: False  
+IsLetter: False 
+Average length: 2 
+Maximun length: 2 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.LetterWithNumberRecognizer: 1
+RecognizerTools.PostalCodeRecognizer: 0
+RecognizerTools.MarketCapRecognizer: 0
+
+Analysis result: 
+Column 5 
+IsNumber: True  
+IsLetter: False 
+Average length: 7 
+Maximun length: 7 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.LatitudeOrLongitudeRecognizer: 0
+RecognizerTools.IPv4Recognizer: 0
+RecognizerTools.DateRecognizer: 0
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 1
+
+Analysis result: 
+Column 6 
+IsNumber: True  
+IsLetter: False 
+Average length: 8 
+Maximun length: 8 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.LatitudeOrLongitudeRecognizer: 0
+RecognizerTools.IPv4Recognizer: 0
+RecognizerTools.DateRecognizer: 0
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 1
+
+Analysis result: 
+Column 7 
+IsNumber: False  
+IsLetter: False 
+Average length: 2 
+Maximun length: 3 
+Empty space: 2185 
+Total count: 397106 
+
+RecognizerTools.LetterWithNumberRecognizer: 0.9944977
+RecognizerTools.PostalCodeRecognizer: 0
+RecognizerTools.MarketCapRecognizer: 0
+
+Analysis result: 
+Column 8 
+IsNumber: False  
+IsLetter: False 
+Average length: 2 
+Maximun length: 3 
+Empty space: 2185 
+Total count: 397106 
+
+RecognizerTools.LetterWithNumberRecognizer: 0.9944977
+RecognizerTools.PostalCodeRecognizer: 0
+RecognizerTools.MarketCapRecognizer: 0
+
+Analysis result: 
+Column 9 
+IsNumber: True  
+IsLetter: False 
+Average length: 3 
+Maximun length: 9 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 1
+
+Analysis result: 
+Column 10 
+IsNumber: False  
+IsLetter: False 
+Average length: 1 
+Maximun length: 2 
+Empty space: 2190 
+Total count: 397106 
+
+RecognizerTools.LetterWithNumberRecognizer: 0.9944851
+RecognizerTools.PostalCodeRecognizer: 0
+RecognizerTools.MarketCapRecognizer: 0
+
+Analysis result: 
+Column 11 
+IsNumber: True  
+IsLetter: False 
+Average length: 0 
+Maximun length: 1 
+Empty space: 2113 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 0.994679
+
+Analysis result: 
+Column 12 
+IsNumber: False  
+IsLetter: False 
+Average length: 3 
+Maximun length: 4 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.LetterWithNumberRecognizer: 1
+RecognizerTools.PostalCodeRecognizer: 0
+RecognizerTools.MarketCapRecognizer: 0
+
+Analysis result: 
+Column 13 
+IsNumber: False  
+IsLetter: True 
+Average length: 2 
+Maximun length: 2 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.LastNameRecognizer: 1
+RecognizerTools.CountryRecognizer: 0
+RecognizerTools.TitleRecognizer: 0
+RecognizerTools.FirstNameRecognizer: 1
+RecognizerTools.CurrencyCodeRecognizer: 0
+RecognizerTools.GenderRecognizer: 0
+
+Analysis result: 
+Column 14 
+IsNumber: False  
+IsLetter: True 
+Average length: 3 
+Maximun length: 3 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.LastNameRecognizer: 1
+RecognizerTools.CountryRecognizer: 0
+RecognizerTools.TitleRecognizer: 0
+RecognizerTools.FirstNameRecognizer: 0
+RecognizerTools.CurrencyCodeRecognizer: 1
+RecognizerTools.GenderRecognizer: 0
+
+Analysis result: 
+Column 15 
+IsNumber: False  
+IsLetter: False 
+Average length: 1 
+Maximun length: 9 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 0.9971997
+
+Analysis result: 
+Column 16 
+IsNumber: False  
+IsLetter: False 
+Average length: 1 
+Maximun length: 9 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 0.9968522
+
+Analysis result: 
+Column 17 
+IsNumber: False  
+IsLetter: False 
+Average length: 1 
+Maximun length: 6 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 0.9998943
+
+Analysis result: 
+Column 18 
+IsNumber: False  
+IsLetter: False 
+Average length: 1 
+Maximun length: 6 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 0.9999698
+
+Analysis result: 
+Column 19 
+IsNumber: False  
+IsLetter: False 
+Average length: 1 
+Maximun length: 8 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 0.9998791
+
+Analysis result: 
+Column 20 
+IsNumber: False  
+IsLetter: False 
+Average length: 1 
+Maximun length: 6 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 0.999995
+
+Analysis result: 
+Column 21 
+IsNumber: True  
+IsLetter: False 
+Average length: 1 
+Maximun length: 1 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 1
+
+Analysis result: 
+Column 22 
+IsNumber: True  
+IsLetter: False 
+Average length: 1 
+Maximun length: 3 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 1
+
+Analysis result: 
+Column 23 
+IsNumber: True  
+IsLetter: False 
+Average length: 1 
+Maximun length: 3 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 1
+
+Analysis result: 
+Column 24 
+IsNumber: False  
+IsLetter: False 
+Average length: 1 
+Maximun length: 6 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 0.9999924
+
+Analysis result: 
+Column 25 
+IsNumber: False  
+IsLetter: False 
+Average length: 3 
+Maximun length: 10 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 0.9927349
+
+Analysis result: 
+Column 26 
+IsNumber: False  
+IsLetter: False 
+Average length: 3 
+Maximun length: 9 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 0.9945707
+
+Analysis result: 
+Column 27 
+IsNumber: True  
+IsLetter: False 
+Average length: 1 
+Maximun length: 1 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 1
+
+Analysis result: 
+Column 28 
+IsNumber: False  
+IsLetter: False 
+Average length: 1 
+Maximun length: 4 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 1
+
+Analysis result: 
+Column 29 
+IsNumber: True  
+IsLetter: False 
+Average length: 1 
+Maximun length: 1 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 1
+
+Analysis result: 
+Column 30 
+IsNumber: False  
+IsLetter: False 
+Average length: 1 
+Maximun length: 5 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 0.9999043
+
+Analysis result: 
+Column 31 
+IsNumber: False  
+IsLetter: False 
+Average length: 1 
+Maximun length: 6 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 0.9999924
+
+Analysis result: 
+Column 32 
+IsNumber: True  
+IsLetter: False 
+Average length: 1 
+Maximun length: 1 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 1
+
+Analysis result: 
+Column 33 
+IsNumber: False  
+IsLetter: False 
+Average length: 1 
+Maximun length: 5 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 0.999995
+
+Analysis result: 
+Column 34 
+IsNumber: False  
+IsLetter: False 
+Average length: 1 
+Maximun length: 6 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 0.9999924
+
+Analysis result: 
+Column 35 
+IsNumber: True  
+IsLetter: False 
+Average length: 1 
+Maximun length: 1 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 1
+
+Analysis result: 
+Column 36 
+IsNumber: False  
+IsLetter: False 
+Average length: 1 
+Maximun length: 7 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 0.9261935
+
+Analysis result: 
+Column 37 
+IsNumber: False  
+IsLetter: False 
+Average length: 1 
+Maximun length: 4 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 1
+
+Analysis result: 
+Column 38 
+IsNumber: False  
+IsLetter: False 
+Average length: 3 
+Maximun length: 7 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 0.9956259
+
+Analysis result: 
+Column 39 
+IsNumber: False  
+IsLetter: False 
+Average length: 1 
+Maximun length: 9 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 0.7872583
+
+Analysis result: 
+Column 40 
+IsNumber: False  
+IsLetter: False 
+Average length: 1 
+Maximun length: 6 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 0.9847925
+
+Analysis result: 
+Column 41 
+IsNumber: True  
+IsLetter: False 
+Average length: 1 
+Maximun length: 1 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 1
+
+Analysis result: 
+Column 42 
+IsNumber: True  
+IsLetter: False 
+Average length: 1 
+Maximun length: 1 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 1
+
+Analysis result: 
+Column 43 
+IsNumber: False  
+IsLetter: False 
+Average length: 1 
+Maximun length: 8 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 0.9957946
+
+Analysis result: 
+Column 44 
+IsNumber: False  
+IsLetter: True 
+Average length: 2 
+Maximun length: 2 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.LastNameRecognizer: 1
+RecognizerTools.CountryRecognizer: 0
+RecognizerTools.TitleRecognizer: 0
+RecognizerTools.FirstNameRecognizer: 1
+RecognizerTools.CurrencyCodeRecognizer: 0
+RecognizerTools.GenderRecognizer: 0
+
+Analysis result: 
+Column 45 
+IsNumber: False  
+IsLetter: True 
+Average length: 2 
+Maximun length: 2 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.LastNameRecognizer: 1
+RecognizerTools.CountryRecognizer: 0
+RecognizerTools.TitleRecognizer: 0
+RecognizerTools.FirstNameRecognizer: 1
+RecognizerTools.CurrencyCodeRecognizer: 0
+RecognizerTools.GenderRecognizer: 0
+
+Analysis result: 
+Column 46 
+IsNumber: False  
+IsLetter: True 
+Average length: 2 
+Maximun length: 2 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.LastNameRecognizer: 1
+RecognizerTools.CountryRecognizer: 0
+RecognizerTools.TitleRecognizer: 0
+RecognizerTools.FirstNameRecognizer: 1
+RecognizerTools.CurrencyCodeRecognizer: 0
+RecognizerTools.GenderRecognizer: 0
+
+Analysis result: 
+Column 47 
+IsNumber: False  
+IsLetter: True 
+Average length: 2 
+Maximun length: 2 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.LastNameRecognizer: 1
+RecognizerTools.CountryRecognizer: 0
+RecognizerTools.TitleRecognizer: 0
+RecognizerTools.FirstNameRecognizer: 1
+RecognizerTools.CurrencyCodeRecognizer: 0
+RecognizerTools.GenderRecognizer: 0
+
+Analysis result: 
+Column 48 
+IsNumber: False  
+IsLetter: True 
+Average length: 2 
+Maximun length: 2 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.LastNameRecognizer: 1
+RecognizerTools.CountryRecognizer: 0
+RecognizerTools.TitleRecognizer: 0
+RecognizerTools.FirstNameRecognizer: 1
+RecognizerTools.CurrencyCodeRecognizer: 0
+RecognizerTools.GenderRecognizer: 0
+
+Analysis result: 
+Column 49 
+IsNumber: False  
+IsLetter: True 
+Average length: 2 
+Maximun length: 2 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.LastNameRecognizer: 1
+RecognizerTools.CountryRecognizer: 0
+RecognizerTools.TitleRecognizer: 0
+RecognizerTools.FirstNameRecognizer: 1
+RecognizerTools.CurrencyCodeRecognizer: 0
+RecognizerTools.GenderRecognizer: 0
+
+Analysis result: 
+Column 50 
+IsNumber: False  
+IsLetter: True 
+Average length: 2 
+Maximun length: 2 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.LastNameRecognizer: 1
+RecognizerTools.CountryRecognizer: 0
+RecognizerTools.TitleRecognizer: 0
+RecognizerTools.FirstNameRecognizer: 1
+RecognizerTools.CurrencyCodeRecognizer: 0
+RecognizerTools.GenderRecognizer: 0
+
+Analysis result: 
+Column 51 
+IsNumber: False  
+IsLetter: True 
+Average length: 2 
+Maximun length: 2 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.LastNameRecognizer: 1
+RecognizerTools.CountryRecognizer: 0
+RecognizerTools.TitleRecognizer: 0
+RecognizerTools.FirstNameRecognizer: 1
+RecognizerTools.CurrencyCodeRecognizer: 0
+RecognizerTools.GenderRecognizer: 0
+
+Analysis result: 
+Column 52 
+IsNumber: False  
+IsLetter: True 
+Average length: 2 
+Maximun length: 2 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.LastNameRecognizer: 1
+RecognizerTools.CountryRecognizer: 0
+RecognizerTools.TitleRecognizer: 0
+RecognizerTools.FirstNameRecognizer: 1
+RecognizerTools.CurrencyCodeRecognizer: 0
+RecognizerTools.GenderRecognizer: 0
+
+Analysis result: 
+Column 53 
+IsNumber: False  
+IsLetter: False 
+Average length: 0 
+Maximun length: 0 
+Empty space: 397106 
+Total count: 397106 
+
+RecognizerTools.LetterWithNumberRecognizer: 0
+RecognizerTools.PostalCodeRecognizer: 0
+RecognizerTools.MarketCapRecognizer: 0
+
+Analysis result: 
+Column 54 
+IsNumber: False  
+IsLetter: False 
+Average length: 0 
+Maximun length: 2 
+Empty space: 277022 
+Total count: 397106 
+
+RecognizerTools.LetterWithNumberRecognizer: 0.3023978
+RecognizerTools.PostalCodeRecognizer: 0
+RecognizerTools.MarketCapRecognizer: 0
+
+Analysis result: 
+Column 55 
+IsNumber: False  
+IsLetter: False 
+Average length: 1 
+Maximun length: 8 
+Empty space: 0 
+Total count: 397106 
+
+RecognizerTools.MoneyRecognizer: 0
+RecognizerTools.NumberRecognizer: 0.9992395
+
+Analysis result: 
+Column 56 
+IsNumber: False  
+IsLetter: False 
+Average length: 1 
+Maximun length: 2 
+Empty space: 17 
+Total count: 397106 
+
+RecognizerTools.LetterWithNumberRecognizer: 0.9999572
+RecognizerTools.PostalCodeRecognizer: 0
+RecognizerTools.MarketCapRecognizer: 0
+

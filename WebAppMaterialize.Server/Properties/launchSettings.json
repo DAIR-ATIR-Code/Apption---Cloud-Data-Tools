@@ -1,0 +1,39 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:58517/",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "Electron.NET App": {
+      "commandName": "Executable",
+      "executablePath": "dotnet",
+      "commandLineArgs": "electronize start",
+      "workingDirectory": ".\\"
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "WebApp.Server": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:58519/"
+    },
+    "Yan": {
+      "commandName": "Executable",
+      "executablePath": "dotnet",
+      "commandLineArgs": "electronize start",
+      "workingDirectory": "C:\\Users\\yrobert\\workspace\\Cloud Data Tools\\DataTools\\WebMaterialize.Server"
+    }
+  }
+}

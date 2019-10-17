@@ -1,0 +1,14 @@
+﻿@if(StatsData != null && StatsData.Count > 0)
+{
+    <div class="sample-container">
+        @foreach(var stat in StatsData)
+        {
+            <div class="sample">@stat</div>
+        }
+    </div>
+}
+
+@functions
+{
+    [Parameter] protected List<string> StatsData { get; set; }
+}

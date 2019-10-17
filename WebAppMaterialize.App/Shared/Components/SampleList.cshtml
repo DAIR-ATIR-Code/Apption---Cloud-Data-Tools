@@ -1,0 +1,14 @@
+﻿@if(SampleData != null && SampleData.Count > 0)
+{
+    <div class="sample-container">
+        @foreach(var sample in SampleData.Distinct().Take(10))
+        {
+            <div class="sample">@sample</div>
+        }
+    </div>
+}
+
+@functions
+{
+    [Parameter] protected List<string> SampleData { get; set; }
+}

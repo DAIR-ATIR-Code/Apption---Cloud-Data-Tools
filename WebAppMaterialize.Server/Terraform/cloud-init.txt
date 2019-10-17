@@ -1,0 +1,20 @@
+#cloud-config
+package_upgrade: true
+package_reboot_if_required: true
+packages:
+  - docker.io
+runcmd:
+  - sudo groupadd docker
+  - sudo usermod -aG docker azureuser
+  - sudo systemctl enable docker
+  - sudo echo "#!/bin/bash" > /etc/DataTools.sh
+  - sudo echo "docker login apptiondocker.azurecr.io -u ApptionDocker -p tbfH06O3pttQ9d/mo1iuCyZsuTuxhxXY" >> /etc/DataTools.sh
+  - sudo echo "docker run -p 80:80 -d apptiondocker.azurecr.io/webappmaterialize" >> /etc/DataTools.sh
+  - sudo echo "docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=@ppt10n d0cker 1m@ge' -p 1433:1433 -d microsoft/mssql-server-linux:2017-latest" >> /etc/DataTools.sh
+  - sudo chmod +x /etc/DataTools.sh
+  - sudo echo "#!/bin/sh -e" > /etc/rc.local
+  - sudo echo "sh /etc/DataTools.sh" >> /etc/rc.local
+  - sudo echo "exit 0" >> /etc/rc.local
+  - sudo chmod +x rc.local
+  - sudo sh /etc/DataTools.sh
+final_message: Your Docker server is now ready

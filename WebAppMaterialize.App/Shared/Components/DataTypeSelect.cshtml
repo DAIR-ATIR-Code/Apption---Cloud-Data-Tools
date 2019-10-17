@@ -1,0 +1,125 @@
+﻿@using DataTools;
+@using RecognizerTools;
+@using NLog;
+@using DTHelperStd;
+
+<div class="input-field col s12">
+    <select ref="DataTypeElementRef" onchange="@(_value => HandleDataTypeSelect(_value))">
+        @if (CloudDataTools.SecondPassStarted)
+        {
+            if (ColumnMetadata.DataType == DataType.Custom)
+            {
+                <option value="@ColumnMetadata.DataType" selected>@ColumnMetadata.DataType</option>
+                ChartJSInterop.CleanupChart();
+            }
+            else
+            {
+                <option value="@DataType.Custom">@DataType.Custom</option>
+            }
+
+            var dataTypeList = CloudDataTools.SecondPass.GetDataTypesDependOnProbability(ColumnMetadata);
+
+            foreach (var dt in dataTypeList)
+            {
+                var rec = CloudDataTools.SecondPass.GetWinningRecognizerForDataType(ColumnMetadata, dt);
+
+                if (rec != null)
+                {
+                    var prob = rec.CurrentState.Probability;
+                    var probWithoutNull = rec.CurrentState.ProbabilityWithoutNull;
+                    string probString;
+                    if(prob == probWithoutNull)
+                    {
+                        probString = String.Format("{0:P2}", prob);
+                    }
+                    else
+                    {
+                        probString = String.Format("{0:P2} (with null) {1:P2} (without null)", prob, probWithoutNull);
+                    }
+                    if (dt == ColumnMetadata.DataType)
+                    {
+                        <option value="@ColumnMetadata.DataType" selected>@ColumnMetadata.DataType [@probString]</option>
+                        ShowChartGraph(ColumnMetadata.DataType);
+                    }
+                    else
+                    {
+                        <option value="@dt">@dt [@probString]</option>
+                    }
+                }
+                else
+                {
+                    <option value="@dt" selected>@dt</option>
+                }
+
+            }
+
+        }
+        else
+        {
+            @foreach (var dt in (DataType[])Enum.GetValues(typeof(DataType)))
+            {
+                if (dt == ColumnMetadata.DataType)
+                {
+                    <option value="@dt" selected>@ColumnMetadata.DataType</option>
+                }
+                else
+                {
+                    <option value="@dt">@dt</option>
+                }
+            }
+        }
+
+    </select>
+    <label>Data Type</label>
+    @if (DistributionInfo != null)
+    {
+        @foreach (var kvp in DistributionInfo)
+        {
+            <span class="sample" style="@(kvp.Value=="True" ? "color: red": "")">
+                @kvp.Key : @kvp.Value
+            </span>
+        }
+    }
+</div>
+@functions
+{
+    [Parameter] protected ColumnMetadata ColumnMetadata { get; set; }
+    [Parameter] protected CloudDataTools CloudDataTools { get; set; }
+    [Parameter] protected Action OnDataTypeUpdate { get; set; }
+    private static Logger Logger = LogManager.GetCurrentClassLogger();
+    private Dictionary<string, string> DistributionInfo;
+
+    ElementRef DataTypeElementRef;
+
+    protected override void OnAfterRender()
+    {
+        base.OnAfterRender();
+        DataTypeElementRef.InitializeSelect();
+        DistributionInfo = null;
+    }
+
+    void ShowChartGraph(DataType dataType)
+    {
+        var rec = CloudDataTools.SecondPass.GetWinningRecognizerForDataType(ColumnMetadata, dataType);
+        ChartJSInterop.InitializeSecondPassResultBarChart($"bar-graph-id", "Length Distribution", rec.GetStatus());
+        var dataPoints = rec.GetStatus().DataPoints;
+        if (dataPoints.Count > 4)
+        {
+            DistributionInfo = DistributionHelper.NormalTest(dataPoints, rec.GetStatus().MinimunX, rec.GetStatus().MaximunX);
+        }
+
+        //LoggerInterop.Log(typeof(CityRecognizer).GetMethod("GetDescriptionV2").Invoke(null, null).ToString());
+        var allRecs = CloudDataTools.SecondPass.GetRecognizerInstancesDependOnProbability(ColumnMetadata);
+        var dataset1 = allRecs.Select(r => (r.GetDescription(), r.CurrentState.Probability)).ToList();
+        var dataset2 = allRecs.Select(r => (r.GetDescription(), r.CurrentState.ProbabilityWithoutNull)).ToList();
+        ChartJSInterop.InitializeProbabilityBarChart($"horizontal-bar-id", dataset1, dataset2);
+
+    }
+
+    void HandleDataTypeSelect(UIChangeEventArgs newValue)
+    {
+        ColumnMetadata.SetDataType((DataType)Enum.Parse(typeof(DataType),newValue.Value.ToString()));
+        Logger.Info($"Change Column{ColumnMetadata.ColumnIndex} DataType to: {newValue.Value.ToString()}");
+        OnDataTypeUpdate?.Invoke();
+    }
+}

@@ -1,0 +1,17 @@
+﻿@using WebAppMaterialize.App.Services
+@using NLog
+
+<div>
+    <p>Welcome to the alpha prototype.</p>
+    <button class="btn orange darken-3" onclick="@(() => UpdateStatePage(StatePage.Connect))">Begin</button>
+    @{
+        Logger.Info("Welcome!");
+    }
+</div>
+
+
+@functions
+{
+    [Parameter] protected Action<StatePage> UpdateStatePage { get; set; }
+    private static Logger Logger = LogManager.GetCurrentClassLogger();
+}

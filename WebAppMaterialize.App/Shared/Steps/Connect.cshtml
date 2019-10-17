@@ -1,0 +1,159 @@
+﻿@using DataTools;
+@using WebAppMaterialize.App
+@using NLog;
+@using WebAppMaterialize.App.Services.Interfaces;
+@using DTHelperStd;
+@using System.Data.SqlClient
+@using System.IO;
+@using WebAppMaterialize.App.Services;
+
+<div>
+	<div class="row">
+		<h5 style="margin-bottom: 30px;">FileSource</h5>
+		<div class="input-field col s12">
+			<div>
+				<select ref="SeparatorRef" bind="@PreRequiredObject.SeparatorType">
+					@foreach (var separator in (SeparatorType[])Enum.GetValues(typeof(SeparatorType)))
+					{
+						if (separator == PreRequiredObject.SeparatorType)
+						{
+							<option value="@separator" selected>@PreRequiredObject.SeparatorType</option>
+						}
+						else
+						{
+							<option value="@separator">@separator</option>
+						}
+					}
+				</select>
+				<label>Separator Selects</label>
+			</div>
+			<div>
+				<p>
+					<label>
+						<input type="checkbox" class="filled-in" bind="PreRequiredObject.HasHeaders" />
+						<span>Has Headers</span>
+					</label>
+				</p>
+			</div>
+			<div>
+				@*@if (FilePaths != null)
+					{
+						foreach (var filepath in FilePaths)
+						{
+							<p>@filepath</p>
+						}
+					}
+					<button class="btn waves-effect waves-light blue darken-1" onclick="@OpenFileDialog">Select a file</button>*@
+                <div class="progress" id="fileUploadProgress" style="display:none;">
+                    <div class="determinate" style="width: 0%"></div>
+                </div>
+				<form action="#">
+					<div class="file-field input-field">
+						<div class="btn">
+							<span>File</span>
+							<input type="file" id="fileupload" data-url="api/upload" title=" " />
+						</div>
+						<div class="file-path-wrapper">
+							<input class="file-path validate" type="text" id="file-path">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<h5>Target</h5>
+		<div class="input-field col s12">
+			<input placeholder="Server=ServerName;Initial Catalog=DataBaseName;Uid=UserName;Pwd=Secret;" id="connect-string" type="text" onchange="@((_value) => HandleConnectionStringChange(_value))" />
+			<label class="active" for="connect-string">Connect String</label>
+		</div>
+		<div class="col s12 valign-wrapper center-align" style="height: 64px">
+			<button class="btn waves-effect waves-light blue darken-1" onclick="@HandleTestConnectionClick">Test Connection</button>
+			@if (IsConnectionCheckInProgress)
+			{
+				<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+			}
+			@if (IsConnectionValidated)
+			{
+				<i class="medium material-icons" style="color: green">check</i>
+			}
+			@if (IsConnectionInvalid)
+			{
+				<i class="medium material-icons" style="color: red">close</i>
+			}
+		</div>
+	</div>
+    <div>
+        <button class="btn waves-effect waves-light grey lighten-1" id="startAnalyze" onclick="@AnalyzeFiles">Start Analysis</button>
+    </div>
+</div>
+
+
+@functions
+{
+    [Parameter] protected IUIService UIService { get; set; }
+    [Parameter] protected PreRequiredObject PreRequiredObject { get; set; }
+    [Parameter] protected Action AnalyzeFiles { get; set; }
+
+    private static Logger Logger = LogManager.GetCurrentClassLogger();
+    public bool HideNextStep { get; set; } = true;
+    public string[] FilePaths { get; set; }
+    private bool IsConnectionValidated { get; set; } = false;
+    private bool IsConnectionInvalid { get; set; } = false;
+    private bool IsConnectionCheckInProgress { get; set; } = false;
+    string Output { get; set; }
+    string imageData = String.Empty;
+
+    ElementRef SeparatorRef;
+
+    protected override void OnAfterRender()
+    {
+        base.OnAfterRender();
+        FilesInterop.InitializeFileInput();
+        SeparatorRef.InitializeSelect();
+    }
+
+    void HandleConnectionStringChange(UIChangeEventArgs newValue)
+    {
+        PreRequiredObject.ConnectionString = newValue.Value.ToString();
+        Logger.Info($"ConnectString changes to {newValue.Value.ToString()}");
+    }
+
+    public void HandleTestConnectionClick()
+    {
+        Logger.Info("Testing the Connection");
+        IsConnectionCheckInProgress = true;
+        IsConnectionValidated = false;
+        IsConnectionInvalid = false;
+
+        StateHasChanged();
+        Task.Factory.StartNew(() =>
+        {
+            try
+            {
+                using (var conn = new SqlConnection(PreRequiredObject.ConnectionString))
+                {
+                    conn.Open();
+                }
+                Logger.Info($"Connection string tested");
+                IsConnectionValidated = true;
+                IsConnectionInvalid = false;
+                IsConnectionCheckInProgress = false;
+                // Good connection string
+            }
+            catch (SqlException sqlE)
+            {
+                // Bad connection string
+                Logger.Info($"Invalid connection string {sqlE.ToString()}");
+                ErrorInterop.Alert($"Invalid connection string {sqlE.ToString()}");
+                IsConnectionValidated = false;
+                IsConnectionInvalid = true;
+                IsConnectionCheckInProgress = false;
+            }
+            finally
+            {
+                StateHasChanged();
+            }
+        });
+    }
+}

@@ -1,0 +1,79 @@
+﻿@using DataTools;
+@using RecognizerTools;
+@using System.Reflection;
+@using System.Collections.Concurrent;
+@using NLog;
+
+<div class="row">
+    <div class="col s6">
+		<div class="row" style="margin-bottom: 0px">
+			<div class="input-field col s10">
+				<input id="field-name" type="text" value="@ColumnMetadata.FieldName" onchange="@(newValue => HandleFieldNameChange(newValue))" />
+				<label class="active" for="field-name">Field Name</label>
+			</div>
+            <div class="input-field s2"  style="vertical-align: middle;">
+                <p>
+                    <label>
+                        <input type="checkbox" class="filled-in" bind="ColumnMetadata.UserIsNullable" />
+                        <span>Null</span>
+                    </label>
+                </p>
+            </div>
+		</div>
+        <div class="row" style="margin-bottom: 0px">
+            <DataTypeSelect CloudDataTools="CloudDataTools"
+                            ColumnMetadata="ColumnMetadata"
+                            OnDataTypeUpdate="OnStateUpdate" />
+        </div>
+        <div class="row" style="margin-bottom: 0px">
+            <StorageTypeSelect  ColumnMetadata="ColumnMetadata" />
+        </div>
+        <div class="row">
+            <div class="col s6">
+                <p>Sample Data</p>
+                <SampleList SampleData="SampleData" />
+            </div>
+            <div class="col s6">
+                <p>Data Statistics</p>
+                <StatsList StatsData="StatsData" />
+            </div>
+        </div>
+    </div>
+    <div class="col s6">
+        <div class="row">
+            <FieldGraph ColumnMetadata="ColumnMetadata" />
+        </div>
+
+    </div>
+</div>
+
+
+
+
+@functions
+{
+    [Parameter] protected ColumnMetadata ColumnMetadata { get; set; }
+    [Parameter] protected List<string> SampleData { get; set; }
+    [Parameter] protected List<string> StatsData { get; set; }
+    [Parameter] protected Action OnStateUpdate { get; set; }
+    [Parameter] protected CloudDataTools CloudDataTools { get; set; }
+
+    private static Logger Logger = LogManager.GetCurrentClassLogger();
+
+    protected void HandleFieldNameChange(UIChangeEventArgs changeEventArgs)
+    {
+        try
+        {
+            var value = changeEventArgs.Value.ToString();
+            Logger.Info($"Changed {ColumnMetadata.FieldName} to: {value}");
+            ColumnMetadata.SetFieldName(value);
+            CloudDataTools.FileObject.Headers[ColumnMetadata.ColumnIndex] = value;
+            OnStateUpdate();
+        }
+        catch (Exception ex)
+        {
+            Logger.Info(ex.Message);
+            throw;
+        }
+    }
+}

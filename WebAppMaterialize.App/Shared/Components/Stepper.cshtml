@@ -1,0 +1,21 @@
+﻿@using Services
+@using RecognizerTools;
+
+<div class="row stepper">
+    <Step Enabled="@(IsEnabled(StatePage.Connect))" Text="Step 1: Connect" DetailedText="Select source file and target database" />
+    <Step Enabled="@(IsEnabled(StatePage.Analysis))" Text="Step 2: Analysis" DetailedText="Detect basic types"/>
+    <Step Enabled="@(IsEnabled(StatePage.Classification))" Text="Step 3: Classification" DetailedText="Advanced analysis with data classification"/>
+    <Step Enabled="@(IsEnabled(StatePage.Upload))" Text="Step 4: Upload" DetailedText="Upload data to cloud"/>
+</div>
+
+@functions
+{
+    [Parameter] protected StatePage CurrentState { get; set; }
+    [Parameter] protected Action<StatePage> UpdateStatePage { get; set; }
+
+    bool IsEnabled(StatePage stepState)
+    {
+        return CurrentState >= stepState;
+    }
+
+}

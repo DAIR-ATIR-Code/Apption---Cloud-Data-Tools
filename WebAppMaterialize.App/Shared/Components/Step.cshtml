@@ -1,0 +1,14 @@
+﻿
+    <div class="col s3 center @(Enabled ? "blue darken-1 step" : "blue darken-2 step")" style="height:unset">
+        <div>
+            <p style="margin-bottom: 0px">@Text</p>
+            <p class="sample" style="color: white;margin-top:5px; margin-bottom: 20px"> @DetailedText </p>
+        </div>
+    </div>
+
+    @functions
+    {
+        [Parameter] protected bool Enabled { get; set; }
+        [Parameter] protected string Text { get; set; }
+        [Parameter] protected string DetailedText { get; set; }
+    }

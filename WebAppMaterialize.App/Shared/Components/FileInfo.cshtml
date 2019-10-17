@@ -1,0 +1,11 @@
+﻿@using DataTools;
+
+	Total Records: @String.Format("{0,15:N0}", FileObject.TotalRecords)
+	<div class="sample">
+		File Size (Mbs): @String.Format("{0,15:N0}", FileObject.FileSize) -
+		Total Columns: @FileObject.TotalColumns
+	</div>
+	@functions
+	{
+	    [Parameter] protected FileObject FileObject { get; set; }
+	}

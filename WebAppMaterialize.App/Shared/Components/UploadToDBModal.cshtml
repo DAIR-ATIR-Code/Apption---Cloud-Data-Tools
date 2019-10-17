@@ -1,0 +1,65 @@
+﻿@using Services
+@using System.Data.SqlClient;
+@using DataTools;
+@using System.Threading;
+@using System.Threading.Tasks;
+@using System.Threading.Tasks.Dataflow;
+@using RecognizerTools.SQL;
+@using RecognizerTools;
+@using NLog;
+
+<button class="btn teal lighten-1" onclick="@LoadToDB">Upload to Database</button>
+
+@*<!-- Modal Trigger -->
+<button data-target="uploadDatabaseModal" class="btn modal-trigger">Connect to Database</button>
+
+<!-- Modal Structure -->
+<div id="uploadDatabaseModal" ref="uploadModalRef" class="modal">
+    <div class="modal-content">
+        <h4>Upload to Database</h4>
+        <div class="input-field col s12">
+            <input id="connect-string" type="text" onchange="@((_value) => connStr = _value.Value.ToString())" />
+            <label for="connect-string">Connect String</label>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-red btn-flat">Cancel</a>
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat" onclick="@HandleConnect">Connect</a>
+    </div>
+</div>*@
+
+
+@functions
+{
+    [Parameter] protected string Schema { get; set; }
+    [Parameter] protected CloudDataTools CloudDataTools { get; set; }
+
+    private static Logger Logger = LogManager.GetCurrentClassLogger();
+
+    //ElementRef uploadModalRef;
+
+    protected override void OnAfterRender()
+    {
+        base.OnAfterRender();
+        //uploadModalRef.InitializeModal();
+    }
+
+    async Task LoadToDB()
+    {
+        Logger.Info($"Start upload {CloudDataTools.FileObject.Filename} To Database");
+        var sql = new ExecuteSQLCopy(CloudDataTools.FileObject.ConnectionString);
+        var obs = await sql.Initialize(CloudDataTools.FileAnalyzer, CloudDataTools.Preferences);
+        var createTableSql = await sql.ExecuteSQLCreateTable();
+        var copied = await sql.PerformCopyToSQL();
+        if (copied == CloudDataTools.FileObject.TotalRecords)
+        {
+
+            await JSRuntime.Current.InvokeAsync<object>("toasts.success", "Success!");
+        }
+        else
+        {
+            await JSRuntime.Current.InvokeAsync<object>("toasts.fail", "Fail!");
+        }
+        Logger.Info($"Upload {CloudDataTools.FileObject.Filename} ({copied} rows) To Database");
+    }
+}
