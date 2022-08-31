@@ -11,5 +11,4 @@ The Apption Data Assessment Tool (A-DAT) is an open source project that provides
 
 
 **A new folder (ServiceCatalogModel) containing a docker compose file has been added to this repo.** 
-
 This signals a shift in the deployment style of this BoosterPack from the previous Morpheus-centric approach to an improved cloud-agnostic approach. 
