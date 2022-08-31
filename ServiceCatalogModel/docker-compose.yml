@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+
+  db:
+    image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+    container_name: mssql
+    restart: always
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Welcome2Adat!
+
+  adat_tool:
+    image: apption/adat-os:latest
+    container_name: adat
+    restart: always
+    ports:
+      - "8000:8000"
