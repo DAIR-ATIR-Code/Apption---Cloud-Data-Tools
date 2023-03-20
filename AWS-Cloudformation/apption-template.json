@@ -1,1 +1,123 @@
-TEST
+{
+  "AWSTemplateFormatVersion" : "2010-09-09",
+
+  "Description" : "Apption Data Assessment Tool by Apption",
+
+  "Parameters" : {
+    "InstanceName" : {
+      "Description" : "Instance Name of the BoosterPack Application Server",
+      "Type" : "String",
+      "MinLength": "1",
+      "MaxLength": "32",
+      "ConstraintDescription" : "Please provide a unique name within 1 to 32 characters long"
+    },
+    "ApplicationImage" : {
+      "Description" : "Recommended AMI for the BoosterPack Application Server",
+      "Type" : "String",
+      "Default" : "ubuntu-20.04",
+      "AllowedValues" : [ "ubuntu-20.04"],
+      "ConstraintDescription" : "Preset configuration cannot be changed"
+    },
+    "InstanceType" : {
+      "Description" : "Recommended EC2 Instance Type for the BoosterPack Application Server",
+      "Type" : "String",
+      "Default" : "t3.large",
+      "AllowedValues" : [ "t3.large"],
+      "ConstraintDescription" : "Preset configuration cannot be changed"
+    },
+    "KeyPair": {
+      "Description" : "Select an existing KeyPair for SSH access to the BoosterPack Application Server",
+      "Type": "AWS::EC2::KeyPair::KeyName",
+      "ConstraintDescription" : "Must use an existing key pair"
+    },
+    "SecurityGroup": {
+        "Description" : "Select a Security Group in the default VPC",
+        "Type": "AWS::EC2::SecurityGroup::GroupName",
+        "ConstraintDescription" : " Must use an existing Security Group in the default VPC"
+      } 
+  },
+
+  "Mappings": {
+    "OSType2AMI": {
+        "ubuntu-20.04": {
+            "AMIId": "ami-0859074604ca21d57"
+        }
+    }
+  },       
+  "Resources" : {
+    "AppServer": {
+      "Type": "AWS::EC2::Instance",
+      "Properties": {
+        "Tags" : [
+            {"Key" : "Name", "Value" : { "Ref" : "InstanceName" }},
+            {"Key" : "BoosterPack", "Value" : "Apption"}
+        ],    
+        "ImageId" : { 
+          "Fn::FindInMap" : [ 
+            "OSType2AMI", 
+            { 
+              "Ref" : "ApplicationImage" 
+            }, 
+            "AMIId"
+          ]
+        },
+        "InstanceType"   : { "Ref" : "InstanceType" },
+        "KeyName"        : { "Ref" : "KeyPair" },
+        "SecurityGroups" : [{"Ref" : "SecurityGroup"}],
+        "BlockDeviceMappings": [
+          {
+            "DeviceName": "/dev/sda1",
+            "Ebs": {
+              "VolumeType": "gp2",
+              "VolumeSize": "120"
+            }
+          }
+        ],
+        "UserData":{
+          "Fn::Base64":{
+            "Fn::Join":[
+              "\n",
+              [ 
+                "#!/bin/bash",
+
+                "{",
+                
+                "echo \"=======> DAIR BOOSTERPACK INSTALLATION IS STARTING <=======\"",
+                "echo $(date)",
+
+                "RELEASENAME=\"main\"",
+
+                "echo \"Installing docker and other dependencies\"",
+                "sudo apt-get -y update && sudo apt-get -y upgrade",
+                "sudo apt-get -y install docker.io && sudo apt-get -y install docker-compose",
+                
+                "echo \"Creating directory and file for Apption Boosterpack deployment\"",
+                "mkdir /home/$(ls /home/* -d | head -n 1 | cut -d/ -f3)/ApptionBP",
+                "cd /home/$(ls /home/* -d | head -n 1 | cut -d/ -f3)/ApptionBP",
+                "wget --no-check-certificate \"https://code.cloud.canarie.ca:3000/Apption/cloud-data-tools/raw/$RELEASENAME/AWS-Cloudformation/docker-compose.yml\"",
+
+                "echo \"Starting Up Application\"",
+                "docker-compose up -d",
+
+                "echo \"=======> DAIR BOOSTERPACK INSTALLATION IS COMPLETE <=======\"",
+                "echo $(date)",
+                
+                "} >> /var/log/boosterpack.log 2>&1"   
+              ]
+            ]
+          }
+        }
+      }
+    }
+  }, 
+  "Outputs" : {
+    "InstanceID" : {
+        "Value" : { "Ref" : "AppServer" },
+        "Description" : "Application Server Instance ID"
+      },
+    "WebAddress" : {
+      "Value" : { "Fn::GetAtt" : [ "AppServer", "PublicIp" ]},
+      "Description" : "Application Server Web Address"
+    }
+  }
+}
