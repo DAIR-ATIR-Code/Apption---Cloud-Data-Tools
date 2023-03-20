@@ -1,7 +1,7 @@
 # Apption Boosterpack for DAIR
 ## Cloud Data Tools
 
-**New "dair" branch added**
+**New "dair" and "main" branches added**
 
 The Apption Data Assessment Tool (A-DAT) is an open source project that provides a solution for:
 
