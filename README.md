@@ -1,7 +1,7 @@
 # Apption Boosterpack for DAIR
 ## Cloud Data Tools
 
-**A new folder (AWS-Cloudformation) containing a Cloudformation template and docker compose file has been added to this repo.** 
+** The MAIN branch has an additional (AWS-Cloudformation) folder containing a cloudformation template and a docker compose file for BoosterPack deployment using AWS Cloudformation.** 
 
 This signals a shift to the AWS Enhanced Services model without the need for Morpheus . 
 
