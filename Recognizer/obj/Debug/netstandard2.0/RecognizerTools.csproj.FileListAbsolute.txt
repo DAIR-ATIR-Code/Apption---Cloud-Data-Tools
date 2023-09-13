@@ -1,0 +1,5 @@
+C:\2023\cloud-data-tools\Recognizer\obj\Debug\netstandard2.0\RecognizerTools.csproj.AssemblyReference.cache
+C:\2023\cloud-data-tools\Recognizer\obj\Debug\netstandard2.0\RecognizerTools.GeneratedMSBuildEditorConfig.editorconfig
+C:\2023\cloud-data-tools\Recognizer\obj\Debug\netstandard2.0\RecognizerTools.AssemblyInfoInputs.cache
+C:\2023\cloud-data-tools\Recognizer\obj\Debug\netstandard2.0\RecognizerTools.AssemblyInfo.cs
+C:\2023\cloud-data-tools\Recognizer\obj\Debug\netstandard2.0\RecognizerTools.csproj.CoreCompileInputs.cache

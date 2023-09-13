@@ -1,0 +1,5 @@
+C:\2023\cloud-data-tools\DataTools\obj\Debug\netstandard2.0\DataTools.csproj.AssemblyReference.cache
+C:\2023\cloud-data-tools\DataTools\obj\Debug\netstandard2.0\DataTools.GeneratedMSBuildEditorConfig.editorconfig
+C:\2023\cloud-data-tools\DataTools\obj\Debug\netstandard2.0\DataTools.AssemblyInfoInputs.cache
+C:\2023\cloud-data-tools\DataTools\obj\Debug\netstandard2.0\DataTools.AssemblyInfo.cs
+C:\2023\cloud-data-tools\DataTools\obj\Debug\netstandard2.0\DataTools.csproj.CoreCompileInputs.cache

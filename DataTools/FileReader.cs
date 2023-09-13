@@ -6,6 +6,7 @@
 using CsvHelper;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -36,7 +37,7 @@ namespace DataTools
             StreamReader fileReader = new StreamReader(FilePath, Encoding.GetEncoding("iso-8859-1"), true);
             //TextReader fileReader = File.OpenText(FilePath);
             List<string> fieldList = new List<string>();
-            var csv = new CsvReader(fileReader);
+            var csv = new CsvReader(fileReader, CultureInfo.InvariantCulture);
 
             csv.Read();
             csv.ReadHeader();
@@ -50,7 +51,7 @@ namespace DataTools
             StreamReader fileReader = new StreamReader(FilePath, Encoding.GetEncoding("iso-8859-1"), true);
             //TextReader fileReader = File.OpenText(FilePath);
             var fieldSet = new HashSet<string>();
-            var csv = new CsvReader(fileReader);
+            var csv = new CsvReader(fileReader, CultureInfo.InvariantCulture);
 
             csv.Read();
             csv.ReadHeader();

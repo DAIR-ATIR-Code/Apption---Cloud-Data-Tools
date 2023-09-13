@@ -1,0 +1,6 @@
+C:\2023\cloud-data-tools\WebAppMaterialize.Server\obj\Debug\net7.0\WebAppMaterialize.Server.csproj.AssemblyReference.cache
+C:\2023\cloud-data-tools\WebAppMaterialize.Server\obj\Debug\net7.0\WebAppMaterialize.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\2023\cloud-data-tools\WebAppMaterialize.Server\obj\Debug\net7.0\WebAppMaterialize.Server.AssemblyInfoInputs.cache
+C:\2023\cloud-data-tools\WebAppMaterialize.Server\obj\Debug\net7.0\WebAppMaterialize.Server.AssemblyInfo.cs
+C:\2023\cloud-data-tools\WebAppMaterialize.Server\obj\Debug\net7.0\WebAppMaterialize.Server.csproj.CoreCompileInputs.cache
+C:\2023\cloud-data-tools\WebAppMaterialize.Server\obj\Debug\net7.0\WebAppMaterialize.Server.MvcApplicationPartsAssemblyInfo.cache
