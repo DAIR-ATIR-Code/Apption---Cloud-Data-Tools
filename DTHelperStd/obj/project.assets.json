@@ -2497,11 +2497,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\2023\\cloud-data-tools\\DTHelperStd\\DTHelperStd.csproj",
+      "projectUniqueName": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DTHelperStd\\DTHelperStd.csproj",
       "projectName": "DTHelperStd",
-      "projectPath": "C:\\2023\\cloud-data-tools\\DTHelperStd\\DTHelperStd.csproj",
+      "projectPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DTHelperStd\\DTHelperStd.csproj",
       "packagesPath": "C:\\Users\\nbader\\.nuget\\packages\\",
-      "outputPath": "C:\\2023\\cloud-data-tools\\DTHelperStd\\obj\\",
+      "outputPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DTHelperStd\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -2569,7 +2569,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

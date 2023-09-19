@@ -4,6 +4,7 @@
 
     initializeFileInput: function () {
         $('#fileupload').fileupload({
+
             start: function (e) {
                 $('#startAnalyze').removeClass("orange darken-3");
                 $('#startAnalyze').addClass("grey lighten-1");
@@ -13,6 +14,7 @@
 
             change: function (e, data) {
                 console.log('Upload file changes');
+                console.log(data.files[0].name);
                 $('#file-path').val(data.files[0].name);
                 window.HelperFunctionInterop.fileName = data.files[0].name;
             },
@@ -34,6 +36,8 @@
             }
         });
     },
+
+    
 
     getFilePath: function () {
         return window.fileInterop.filePath;

@@ -1,0 +1,37 @@
+﻿@using DataTools
+@using RecognizerTools
+@using WebAppMaterialize.App;
+@inject IJSRuntime JSRuntime
+<!--
+    <canvas ref="CanvasElementRef" id="graph"></canvas>
+-->
+<div class="row">
+    <canvas id="pieGraph"></canvas>
+</div>
+
+<div class="row">
+    <canvas id="bar-graph-id"></canvas>
+</div>
+        
+<div class="row">
+    <canvas id="horizontal-bar-id"></canvas>
+</div>
+
+
+
+
+@*<canvas id="radarGraph"></canvas>*@
+
+@functions
+{
+
+    [Parameter] public ColumnMetadata ColumnMetadata { get; set; }
+    [Parameter] public SecondAnalysisResult SecondAnalysisResult { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        var chartJsInterop = new ChartJSInterop(JSRuntime);
+        await chartJsInterop.InitializePieChart("pieGraph", ColumnMetadata.TotalNonNullRecords, ColumnMetadata.TotalNulls);
+
+    }
+}

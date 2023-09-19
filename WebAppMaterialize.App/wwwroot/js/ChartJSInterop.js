@@ -91,7 +91,7 @@
             }
         });
 
-        return ture;
+        return true;
 
     },
 

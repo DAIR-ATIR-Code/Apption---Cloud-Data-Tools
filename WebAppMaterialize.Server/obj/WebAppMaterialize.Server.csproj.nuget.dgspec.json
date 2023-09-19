@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\2023\\cloud-data-tools\\WebAppMaterialize.Server\\WebAppMaterialize.Server.csproj": {}
+    "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.Server\\WebAppMaterialize.Server.csproj": {}
   },
   "projects": {
-    "C:\\2023\\cloud-data-tools\\DataTools\\DataTools.csproj": {
+    "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DataTools\\DataTools.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\2023\\cloud-data-tools\\DataTools\\DataTools.csproj",
+        "projectUniqueName": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DataTools\\DataTools.csproj",
         "projectName": "DataTools",
-        "projectPath": "C:\\2023\\cloud-data-tools\\DataTools\\DataTools.csproj",
+        "projectPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DataTools\\DataTools.csproj",
         "packagesPath": "C:\\Users\\nbader\\.nuget\\packages\\",
-        "outputPath": "C:\\2023\\cloud-data-tools\\DataTools\\obj\\",
+        "outputPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DataTools\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -34,8 +34,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\2023\\cloud-data-tools\\DTHelperStd\\DTHelperStd.csproj": {
-                "projectPath": "C:\\2023\\cloud-data-tools\\DTHelperStd\\DTHelperStd.csproj"
+              "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DTHelperStd\\DTHelperStd.csproj": {
+                "projectPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DTHelperStd\\DTHelperStd.csproj"
               }
             }
           }
@@ -103,18 +103,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\2023\\cloud-data-tools\\DTHelperStd\\DTHelperStd.csproj": {
+    "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DTHelperStd\\DTHelperStd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\2023\\cloud-data-tools\\DTHelperStd\\DTHelperStd.csproj",
+        "projectUniqueName": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DTHelperStd\\DTHelperStd.csproj",
         "projectName": "DTHelperStd",
-        "projectPath": "C:\\2023\\cloud-data-tools\\DTHelperStd\\DTHelperStd.csproj",
+        "projectPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DTHelperStd\\DTHelperStd.csproj",
         "packagesPath": "C:\\Users\\nbader\\.nuget\\packages\\",
-        "outputPath": "C:\\2023\\cloud-data-tools\\DTHelperStd\\obj\\",
+        "outputPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DTHelperStd\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -182,18 +182,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\2023\\cloud-data-tools\\Recognizer\\RecognizerTools.csproj": {
+    "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\Recognizer\\RecognizerTools.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\2023\\cloud-data-tools\\Recognizer\\RecognizerTools.csproj",
+        "projectUniqueName": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\Recognizer\\RecognizerTools.csproj",
         "projectName": "RecognizerTools",
-        "projectPath": "C:\\2023\\cloud-data-tools\\Recognizer\\RecognizerTools.csproj",
+        "projectPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\Recognizer\\RecognizerTools.csproj",
         "packagesPath": "C:\\Users\\nbader\\.nuget\\packages\\",
-        "outputPath": "C:\\2023\\cloud-data-tools\\Recognizer\\obj\\",
+        "outputPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\Recognizer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -216,8 +216,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\2023\\cloud-data-tools\\DataTools\\DataTools.csproj": {
-                "projectPath": "C:\\2023\\cloud-data-tools\\DataTools\\DataTools.csproj"
+              "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DataTools\\DataTools.csproj": {
+                "projectPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DataTools\\DataTools.csproj"
               }
             }
           }
@@ -273,18 +273,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\2023\\cloud-data-tools\\WebAppMaterialize.App\\WebAppMaterialize.App.csproj": {
+    "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\WebAppMaterialize.App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\2023\\cloud-data-tools\\WebAppMaterialize.App\\WebAppMaterialize.App.csproj",
+        "projectUniqueName": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\WebAppMaterialize.App.csproj",
         "projectName": "WebAppMaterialize.App",
-        "projectPath": "C:\\2023\\cloud-data-tools\\WebAppMaterialize.App\\WebAppMaterialize.App.csproj",
+        "projectPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\WebAppMaterialize.App.csproj",
         "packagesPath": "C:\\Users\\nbader\\.nuget\\packages\\",
-        "outputPath": "C:\\2023\\cloud-data-tools\\WebAppMaterialize.App\\obj\\",
+        "outputPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -301,18 +301,17 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\2023\\cloud-data-tools\\DataTools\\DataTools.csproj": {
-                "projectPath": "C:\\2023\\cloud-data-tools\\DataTools\\DataTools.csproj"
+              "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DataTools\\DataTools.csproj": {
+                "projectPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DataTools\\DataTools.csproj"
               },
-              "C:\\2023\\cloud-data-tools\\Recognizer\\RecognizerTools.csproj": {
-                "projectPath": "C:\\2023\\cloud-data-tools\\Recognizer\\RecognizerTools.csproj"
+              "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\Recognizer\\RecognizerTools.csproj": {
+                "projectPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\Recognizer\\RecognizerTools.csproj"
               }
             }
           }
@@ -331,14 +330,13 @@
               "target": "Package",
               "version": "[3.8.2-alpha, )"
             },
-            "Microsoft.AspNetCore.Blazor.Browser": {
+            "Microsoft.AspNetCore.Components": {
               "target": "Package",
-              "version": "[0.7.0, )"
+              "version": "[7.0.11, )"
             },
-            "Microsoft.AspNetCore.Blazor.Build": {
-              "suppressParent": "All",
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
-              "version": "[0.7.0, )"
+              "version": "[1.4.4, )"
             },
             "NLog": {
               "target": "Package",
@@ -372,18 +370,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\2023\\cloud-data-tools\\WebAppMaterialize.Server\\WebAppMaterialize.Server.csproj": {
+    "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.Server\\WebAppMaterialize.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\2023\\cloud-data-tools\\WebAppMaterialize.Server\\WebAppMaterialize.Server.csproj",
+        "projectUniqueName": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.Server\\WebAppMaterialize.Server.csproj",
         "projectName": "WebAppMaterialize.Server",
-        "projectPath": "C:\\2023\\cloud-data-tools\\WebAppMaterialize.Server\\WebAppMaterialize.Server.csproj",
+        "projectPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.Server\\WebAppMaterialize.Server.csproj",
         "packagesPath": "C:\\Users\\nbader\\.nuget\\packages\\",
-        "outputPath": "C:\\2023\\cloud-data-tools\\WebAppMaterialize.Server\\obj\\",
+        "outputPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -400,18 +398,17 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\2023\\cloud-data-tools\\DataTools\\DataTools.csproj": {
-                "projectPath": "C:\\2023\\cloud-data-tools\\DataTools\\DataTools.csproj"
+              "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DataTools\\DataTools.csproj": {
+                "projectPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DataTools\\DataTools.csproj"
               },
-              "C:\\2023\\cloud-data-tools\\WebAppMaterialize.App\\WebAppMaterialize.App.csproj": {
-                "projectPath": "C:\\2023\\cloud-data-tools\\WebAppMaterialize.App\\WebAppMaterialize.App.csproj"
+              "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\WebAppMaterialize.App.csproj": {
+                "projectPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\WebAppMaterialize.App.csproj"
               }
             }
           }
@@ -430,9 +427,9 @@
               "target": "Package",
               "version": "[0.0.11, )"
             },
-            "Microsoft.AspNetCore.Blazor.Server": {
+            "Microsoft.AspNetCore.Components": {
               "target": "Package",
-              "version": "[0.7.0, )"
+              "version": "[7.0.11, )"
             },
             "Microsoft.AspNetCore.Razor.Design": {
               "target": "Package",
@@ -470,7 +467,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

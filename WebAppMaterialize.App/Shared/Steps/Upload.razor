@@ -1,0 +1,78 @@
+﻿@using WebAppMaterialize.App.Services;
+@using System.Text;
+@using System.IO;
+@using DataTools;
+@using NLog;
+@using WebAppMaterialize.App.Shared.Components
+@inject Preferences Preferences
+@inject IJSRuntime JSRuntime
+<div>
+    <h4>SQL Create Script</h4>
+
+    <div class="row">
+
+        <div class="input-field col s12">
+            <pre class="col s12" ref="hljsRef">
+            <code class="sql hljs" id="schema_id" ondblclick="@HandleDbClick">@schema</code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="fixed-action-btn" ref="floatingActionButtonRef">
+        <a class="btn-floating btn-large red">
+            <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating red btn tooltipped" data-clipboard-text="@schema" data-position="left" data-tooltip="Copy"><i class="material-icons">content_copy</i></a></li>
+            <li><a class="btn-floating yellow darken-1 tooltipped" href="data:application/octet-stream;charset=utf-16le;base64,@EncodingUriComponent()" download="schema.txt" data-position="left" data-tooltip="Download"><i class="material-icons">arrow_downward</i></a></li>
+
+        </ul>
+    </div>
+
+
+
+    <button class="btn grey darken-3" onclick="@(() => UpdateStatePage(StatePage.Review))">Back</button>
+    <UploadToDBModal CloudDataTools="CloudDataTools"
+                     Schema="@schema" />
+
+</div>
+
+@functions
+{
+    [Parameter] public Action<StatePage> UpdateStatePage { get; set; }
+    [Parameter] public CloudDataTools CloudDataTools { get; set; }
+    ElementReference hljsRef;
+    ElementReference floatingActionButtonRef;
+    private static Logger Logger = LogManager.GetCurrentClassLogger();
+
+
+    private string schema;
+    private string[] styleList = new string[] { "Idea", "Lightfair", "Tomorrow", "Grayscale", "Default" };
+    private Random random = new Random();
+
+    protected override async Task OnAfterRenderAsync(bool isFirstRender)
+    {        
+        await floatingActionButtonRef.InitializeFloatingAction(JSRuntime);
+        await hljsRef.InitializeHighlightJS(JSRuntime);
+    }
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+        var sg = CloudDataTools.GetSchemaGenerator();
+        schema = sg.BuildSQLString();
+    }
+
+    string EncodingUriComponent()
+    {
+        var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(schema);
+        return System.Convert.ToBase64String(plainTextBytes);
+    }
+
+    void HandleDbClick()
+    {
+        var num = random.Next(0, 4);
+        HighlightJSInterop.ChangeScheme(styleList[num], JSRuntime);
+        Logger.Info($"Scheme has changed to {styleList[num]}");
+    }
+}

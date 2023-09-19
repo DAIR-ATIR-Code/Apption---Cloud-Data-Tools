@@ -9,9 +9,121 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebAppMaterialize.App
 build_property.RootNamespace = WebAppMaterialize.App
-build_property.ProjectDir = C:\2023\cloud-data-tools\WebAppMaterialize.App\
-build_property.RazorLangVersion = Experimental
+build_property.ProjectDir = C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\WebAppMaterialize.App\
+build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\2023\cloud-data-tools\WebAppMaterialize.App
+build_property.MSBuildProjectDirectory = C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\WebAppMaterialize.App
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/Pages/_ViewImports.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/Shared/Components/CheckBox.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcQ2hlY2tCb3gucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/Shared/Components/DataTypeSelect.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcRGF0YVR5cGVTZWxlY3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/Shared/Components/FieldDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcRmllbGREZXRhaWxzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/Shared/Components/FieldGraph.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcRmllbGRHcmFwaC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/Shared/Components/FileInfo.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcRmlsZUluZm8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/Shared/Components/Preloader.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcUHJlbG9hZGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/Shared/Components/ProgressBar.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcUHJvZ3Jlc3NCYXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/Shared/Components/SampleList.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcU2FtcGxlTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/Shared/Components/StatsList.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcU3RhdHNMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/Shared/Components/Step.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcU3RlcC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/Shared/Components/StepLine.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcU3RlcExpbmUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/Shared/Components/Stepper.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcU3RlcHBlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/Shared/Components/StorageTypeSelect.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcU3RvcmFnZVR5cGVTZWxlY3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/Shared/Components/UploadToDBModal.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcVXBsb2FkVG9EQk1vZGFsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/Shared/Steps/Analysis.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN0ZXBzXEFuYWx5c2lzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/Shared/Steps/Connect.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN0ZXBzXENvbm5lY3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/Shared/Steps/Recommend.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN0ZXBzXFJlY29tbWVuZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/Shared/Steps/Review.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN0ZXBzXFJldmlldy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/Shared/Steps/Target.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN0ZXBzXFRhcmdldC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/Shared/Steps/Upload.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN0ZXBzXFVwbG9hZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/Shared/Steps/Welcome.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN0ZXBzXFdlbGNvbWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/OneDrive/OneDrive - Apption/2023/cloud-data-tools/WebAppMaterialize.App/wwwroot/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d3d3cm9vdFxpbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

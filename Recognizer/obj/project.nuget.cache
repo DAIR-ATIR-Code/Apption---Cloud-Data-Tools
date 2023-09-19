@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E3UDJBl8Go7TOHRc+PqDoNDC7JIg9qcRperewXzb146NhuXl8ODSxEmeprhtbLlFBxB/EPYAhP/J5puALyg90A==",
+  "dgSpecHash": "qQ/hCZwnpqRFt5H2QR5xJV6jIOQs7s236SqJyTXlq1dyEhFbqtZ256SaxbN9ttuszXXjSMit1NHMv/5oKoV+ug==",
   "success": true,
-  "projectFilePath": "C:\\2023\\cloud-data-tools\\Recognizer\\RecognizerTools.csproj",
+  "projectFilePath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\Recognizer\\RecognizerTools.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nbader\\.nuget\\packages\\accord\\3.8.2-alpha\\accord.3.8.2-alpha.nupkg.sha512",
     "C:\\Users\\nbader\\.nuget\\packages\\accord.math\\3.8.2-alpha\\accord.math.3.8.2-alpha.nupkg.sha512",

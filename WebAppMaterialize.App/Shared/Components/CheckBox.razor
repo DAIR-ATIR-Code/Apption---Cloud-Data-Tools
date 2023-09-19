@@ -1,0 +1,14 @@
+﻿@using DataTools;
+
+<p>
+    <label>
+        <input type="checkbox" class="filled-in" bind="BindValue" />
+        <span>@CheckboxTitle</span>
+    </label>
+</p>
+
+@functions
+{
+    [Parameter] public bool BindValue { get; set; }
+    [Parameter] public string CheckboxTitle { get; set; }
+}

@@ -5,7 +5,6 @@
 
 using DataTools;
 using ElectronNET.API;
-using Microsoft.AspNetCore.Blazor.Server;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.ResponseCompression;
@@ -13,6 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Linq;
 using System.Net.Mime;
+//using System.Net.Mime;
 using System.Threading.Tasks;
 using WebAppMaterialize.App.Services.Interfaces;
 using WebAppMaterialize.Server.Services;
@@ -33,7 +33,7 @@ namespace WebAppMaterialize.Server
         public void ConfigureServices(IServiceCollection services)
         {
             // Adds the Server-Side Blazor services, and those registered by the app project's startup.
-            services.AddServerSideBlazor<App.Startup>();
+            //TODOVERIFY services.AddServerSideBlazor<App.Startup>();
             //TODO: Load from JSON configuration file
             services.AddSingleton<Preferences>(new Preferences());
             services.AddSingleton<IUIService, UIService>();
@@ -47,7 +47,7 @@ namespace WebAppMaterialize.Server
                 options.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(new[]
                 {
                     MediaTypeNames.Application.Octet,
-                    WasmMediaTypeNames.Application.Wasm,
+                    //TODOVERIFYWasmMediaTypeNames.Application.Wasm,
                 });
             });
         }
@@ -64,7 +64,7 @@ namespace WebAppMaterialize.Server
             app.UseMvc();
 
             // Use component registrations and static files from the app project.
-            app.UseServerSideBlazor<App.Startup>();
+            //TODOVERIFY app.UseServerSideBlazor<App.Startup>();
             Task.Run(async () => await Electron.WindowManager.CreateWindowAsync());
 
         }

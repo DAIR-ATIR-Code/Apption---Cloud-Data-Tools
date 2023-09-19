@@ -17,6 +17,7 @@ using DTHelperStd;
 using System.Threading;
 using System.Text.RegularExpressions;
 using CsvHelper;
+using System.Globalization;
 
 namespace DataToolsTest
 {
@@ -39,7 +40,7 @@ namespace DataToolsTest
             var addrAnalyzer = new AddressAnalyzer();
             List<string> badDataList = new List<string>();
             using (var fileReader = new StreamReader(EnvironicsCsvPath))
-            using (var csv = new CsvReader(fileReader))
+            using (var csv = new CsvReader(fileReader, CultureInfo.InvariantCulture))
             {
                 csv.Read();
                 csv.ReadHeader();
@@ -62,7 +63,7 @@ namespace DataToolsTest
             List<string> badDataList = new List<string>();
 
             using (var fileReader = new StreamReader(EnvironicsCsvPath))
-            using (var csv = new CsvReader(fileReader))
+            using (var csv = new CsvReader(fileReader, CultureInfo.InvariantCulture))
             {
                 csv.Read();
                 csv.ReadHeader();
@@ -89,7 +90,7 @@ namespace DataToolsTest
             List<string> badDataList = new List<string>();
             var addrAnalyzer = new AddressAnalyzer();
             using (var fileReader = new StreamReader(EnvironicsCsvPath))
-            using (var csv = new CsvReader(fileReader))
+            using (var csv = new CsvReader(fileReader, CultureInfo.InvariantCulture))
             {
                 csv.Read();
                 csv.ReadHeader();
@@ -136,7 +137,7 @@ namespace DataToolsTest
               })).ToArray();
 
             using (var fileReader = new StreamReader(EnvironicsDirtierFilePath))
-            using (var csv = new CsvReader(fileReader))
+            using (var csv = new CsvReader(fileReader, CultureInfo.InvariantCulture))
             {
                 csv.Read();
                 csv.ReadHeader();
@@ -158,7 +159,7 @@ namespace DataToolsTest
         private void GivenCSVFile_ThenAddressValidationForCleanData()
         {
             TextReader fileReader = File.OpenText(EnvironicsCsvPath);
-            var csv = new CsvReader(fileReader);
+            var csv = new CsvReader(fileReader, CultureInfo.InvariantCulture);
             var addrAnalyzer = new AddressAnalyzer();
 
             string address1 = string.Empty;

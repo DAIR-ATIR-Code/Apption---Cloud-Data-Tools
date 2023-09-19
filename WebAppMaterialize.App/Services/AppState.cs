@@ -18,6 +18,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.IO;
 using WebAppMaterialize.App.Services.Interfaces;
+using Microsoft.JSInterop;
 
 namespace WebAppMaterialize.App.Services
 {
@@ -34,6 +35,7 @@ namespace WebAppMaterialize.App.Services
 	public class AppState
 	{
         public IUIService UIService { get; private set; }
+        public IJSRuntime JSRuntime { get; }
 
         public StatePage currentPage = StatePage.Connect;
         public CloudDataTools CloudDataTools { get; private set; }
@@ -55,9 +57,10 @@ namespace WebAppMaterialize.App.Services
 
 		private static Logger Logger = LogManager.GetCurrentClassLogger();
 
-		public AppState(IUIService uiService)
+		public AppState(IUIService uiService, IJSRuntime jSRuntime)
 		{
             UIService = uiService;
+            JSRuntime = jSRuntime;
         }
 
 		public AppState()
@@ -66,13 +69,14 @@ namespace WebAppMaterialize.App.Services
 
 		public async Task AnalyzeFiles()
 		{
-            var obj = await FilesInterop.GetFilePath();
+            var obj = await FilesInterop.GetFilePath(JSRuntime);
             var filepath = obj.ToString();
+            //var filepath = "C:\\OneDrive\\OneDrive - Apption\\2023\\Datahunter\\DataHunter-Main\\misc\\MockData\\csv\\avocado.csv";
 			if (!File.Exists(filepath))
 			{
 				Logger.Error("Fail in file upload or File not selected");                
 				//AddError("File not selected. Please select a file");
-				ErrorInterop.Alert("File not selected. Please select a file");
+				ErrorInterop.Alert(JSRuntime, "File not selected. Please select a file");
 				NotifyStateChanged();
 			}
 			else
@@ -118,7 +122,7 @@ namespace WebAppMaterialize.App.Services
 			ex =>
 			{
 				Logger.Error(ex, "Error in first pass subscriber");
-                ErrorInterop.Alert("Error in first pass subscriber. Program restarts. \nFor more detail, hit F9.");
+                ErrorInterop.Alert(JSRuntime, "Error in first pass subscriber. Program restarts. \nFor more detail, hit F9.");
                 Reset();
             }, () =>
 			{
@@ -126,7 +130,7 @@ namespace WebAppMaterialize.App.Services
                 NotifyStateChanged();
                 // On complete
                 CloudDataTools.FileObject.ConnectionString = PreRequiredObject.ConnectionString;
-                CloudDataTools.FileObject.UserTableName = Path.GetFileNameWithoutExtension(FilesInterop.GetFileName().Result.ToString());
+                CloudDataTools.FileObject.UserTableName = Path.GetFileNameWithoutExtension(FilesInterop.GetFileName(JSRuntime).Result.ToString());
                 UserFileName = string.Empty;
                 UpdateStatePage(StatePage.Review);
 
@@ -171,7 +175,7 @@ namespace WebAppMaterialize.App.Services
             exception =>
             {
                 Logger.Error(exception, "Error in second pass file analysis");
-                ErrorInterop.Alert("Error in second pass file analysis. Program restarts. \nFor more detail, hit F9.");
+                ErrorInterop.Alert(JSRuntime, "Error in second pass file analysis. Program restarts. \nFor more detail, hit F9.");
                 Reset();
             }, () =>
             {
@@ -187,7 +191,7 @@ namespace WebAppMaterialize.App.Services
             Logger.Info("Begin reset");
 			Type type = this.GetType();
 			PropertyInfo[] properties = type.GetProperties();
-			var newState = new AppState(this.UIService);
+			var newState = new AppState(this.UIService, JSRuntime);
 			try
 			{
 				for (int i = 0; i < properties.Count(); ++i)
@@ -224,6 +228,7 @@ namespace WebAppMaterialize.App.Services
 		}
 
         public event Action OnProgressBarChange;
+
         private void NotifyProgressBarChanged()
         {
             lock (this)

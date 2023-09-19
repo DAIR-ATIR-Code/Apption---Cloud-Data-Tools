@@ -1,0 +1,171 @@
+﻿@using DataTools;
+@using WebAppMaterialize.App.Services;
+@using RecognizerTools;
+@using NLog;
+@using WebAppMaterialize.App.Shared.Components
+@inject IJSRuntime JSRuntime
+
+<div class="row" style="margin-bottom: 4px;">
+	<div class="input-field col s4 truncate">
+		<input id="table-name" type="text" style="font-size:30px" value="@CloudDataTools.FileObject.GetSQLTableName()" onchange="@(() => HandleTableNameChange)" />
+		<label class="active" for="table-name">Table Name</label>
+	</div>
+	<div class="col s5" style="margin-top: 20px;">
+		<FileInfo FileObject="CloudDataTools.FileObject" />
+	</div>
+	<div class="col s3">
+		<button class="btn grey darken-3 right" style="margin-right: 10px;" onclick="@Reset">Change File</button>
+	</div>
+</div>
+<div class="row">
+
+	@if (!IsProcessFinished)
+	{
+		<div class="col s12">
+			<ProgressBar AppState="AppState"/>
+		</div>
+	}
+</div>
+<div class="row">
+	<div class="col s3">
+		<div class="row" style="font-weight:bold; margin-bottom:0px;">
+			<p class="col s4">Import</p>
+			<p class="col s4">Field Name</p>
+			@if (CloudDataTools.SecondPassStarted)
+			{
+				<p class="col s4">Sensitive</p>
+			}
+		</div>
+		<ul class="collection">
+			@foreach (var header in CloudDataTools.FileObject.ColumnMetadata.Where(x => x.Value.IsDisplayed))
+			{
+				//Select the first colum by default
+				if (CloudDataTools.FileObject != null && selectedColumn == null)
+				{
+					selectedColumn = CloudDataTools.FileObject.ColumnMetadata[1];
+				}
+				var selectedString = header.Key == selectedColumn?.ColumnIndex ? "selected" : "";
+				var className = $"collection-item field {selectedString} ";
+				<li class=@className onclick="@(() => HandleHeaderClick(header.Key))">
+					<div class="row valign-wrapper center-align" style="margin-bottom: 10px;">
+						<div class="col s1">
+							<p>
+								<label>
+									<input type="checkbox" class="filled-in" bind="CloudDataTools.FileObject.ColumnMetadata[header.Key].IsToImport" />
+									<span></span>
+								</label>
+							</p>
+						</div>
+						<div class="col s2" style="display:inline-flex;" onclick="@(() => HandlePrimaryKeyClick(header.Key))">
+							@if (CloudDataTools.FileObject.ColumnMetadata[header.Key].IsPrimaryKeyCandidate() && CloudDataTools.FileObject.ColumnMetadata[header.Key].IsPrimaryKey)
+							{
+								<img class="images" src="img/key-color.png">
+							}
+							else if (CloudDataTools.FileObject.ColumnMetadata[header.Key].IsPrimaryKeyCandidate() && !CloudDataTools.FileObject.ColumnMetadata[header.Key].IsPrimaryKey)
+							{
+								<img class="images" src="img/key-bw.png">
+							}
+						</div>
+						<div class="col s4 left-align">
+							<div>
+								<p class="truncate" style="font-weight: bold;">@GetFieldName(header.Key)</p>
+								<span class="field-data-type left-align">@CloudDataTools.FileObject.ColumnMetadata[header.Key].DataType</span>
+							</div>
+						</div>
+						<div class="sensitivs col s3" style="align-content:flex-start">
+							@if (IsSensitive(header.Key) && sensitiveChecked)
+							{
+								<img class="images" src="img/User-privacy-icon.svg">
+							}
+						</div>
+					</div>
+
+				</li>
+			}
+		</ul>
+	</div>
+	<div class="col s9">
+		<FieldDetails ColumnMetadata="selectedColumn"
+					  StatsData="selectedStatsData == null ? selectedColumn.GetMetadataStats() :selectedStatsData"
+                      SampleData="CloudDataTools.FileObject?.SampleData[selectedColumn.ColumnIndex]"
+					  OnStateUpdate="() => StateHasChanged()"
+					  CloudDataTools="CloudDataTools" />
+	</div>
+</div>
+
+<div class="row">
+	@*<button class="btn grey darken-3" onclick="@(() => UpdateStatePage(StatePage.Connect))">Back</button>*@
+	@if (!CloudDataTools.SecondPassStarted)
+	{
+		<button class="btn orange darken-1" id="secondAnalysis" onclick="@SecondAnalysis">Classify Fields</button>
+	}
+	<button class="btn orange darken-2" onclick="@(() => UpdateStatePage(StatePage.Upload))">View Schema</button>
+</div>
+
+@functions
+{
+	ColumnMetadata selectedColumn;
+	List<string> selectedSampleData;
+	List<string> selectedStatsData;
+	bool sensitiveChecked = true;
+
+	[Parameter] public CloudDataTools CloudDataTools { get; set; }
+	[Parameter] public Action<StatePage> UpdateStatePage { get; set; }
+	[Parameter] public Action SecondAnalysis { get; set; }
+	[Parameter] public Action Reset { get; set; }
+	[Parameter] public bool IsProcessFinished { get; set; }
+	[Parameter] public AppState AppState { get; set; }
+	private static Logger Logger = LogManager.GetCurrentClassLogger();
+
+	async void HandleHeaderClick(int header)
+	{
+		var chartJsInterop = new ChartJSInterop(JSRuntime);
+		CloudDataTools.FileObject.ColumnMetadata.TryGetValue(header, out selectedColumn);
+		CloudDataTools.FileObject.SampleData.TryGetValue(header, out selectedSampleData);
+		selectedStatsData = selectedColumn.GetMetadataStats();
+		Logger.Info($"Column{header} was clicked");
+		await chartJsInterop.CleanupChart();
+		StateHasChanged();
+	}
+
+    
+
+    string GetFieldName(int index)
+    {
+        return CloudDataTools.FileObject.Headers[index];
+    }
+
+    void HandleSwitchChange(int index, ChangeEventArgs changeEventArgs)
+    {
+        var check = (bool)changeEventArgs.Value;
+        if (!check)
+        {
+            CloudDataTools.FileObject.CancelAnalysis();
+            Logger.Info($"The column[{index}] analysis is being cancelled");
+        }
+        else
+        {
+            Logger.Info($"Invalid operation, need to reset");
+        }
+    }
+
+    void HandleTableNameChange(ChangeEventArgs changeEventArgs)
+    {
+        CloudDataTools.FileObject.UserTableName = changeEventArgs.Value.ToString();
+        Logger.Info($"Changed Table Name to: {changeEventArgs.Value.ToString()}");
+
+    }
+
+    void HandlePrimaryKeyClick(int index)
+    {
+        var columnMetadata = CloudDataTools.FileObject.ColumnMetadata[index];
+        columnMetadata.IsPrimaryKey = !columnMetadata.IsPrimaryKey;
+        Logger.Info($"Column{index} IsPrimaryKey has change to {columnMetadata.IsPrimaryKey}");
+    }
+
+    bool IsSensitive(int columnIndex)
+    {
+        return SecondPass.IsSensitive(CloudDataTools.FileObject.ColumnMetadata[columnIndex].DataType);
+    }
+
+}

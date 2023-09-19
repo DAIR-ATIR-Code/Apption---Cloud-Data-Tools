@@ -3,17 +3,17 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-using Microsoft.AspNetCore.Blazor;
 using Microsoft.JSInterop;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Components;
 
 namespace WebAppMaterialize.App
 {
     public static class HelperFunctionInterop
     {
-        public static Task InitializeHighlightJS(this ElementRef elementRef)
+        public static async Task InitializeHighlightJS(this ElementReference elementRef, IJSRuntime JSRuntime)
         {
-            return JSRuntime.Current.InvokeAsync<object>("HelperFunctionInterop.highlightJS", elementRef);
+            await JSRuntime.InvokeAsync<object>("HelperFunctionInterop.highlightJS", elementRef);
         }
     }
 }

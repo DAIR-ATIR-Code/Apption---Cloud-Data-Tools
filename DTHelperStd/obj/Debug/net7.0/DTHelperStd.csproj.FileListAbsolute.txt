@@ -13,3 +13,18 @@ C:\2023\cloud-data-tools\DTHelperStd\obj\Debug\net7.0\refint\DTHelperStd.dll
 C:\2023\cloud-data-tools\DTHelperStd\obj\Debug\net7.0\DTHelperStd.pdb
 C:\2023\cloud-data-tools\DTHelperStd\obj\Debug\net7.0\DTHelperStd.genruntimeconfig.cache
 C:\2023\cloud-data-tools\DTHelperStd\obj\Debug\net7.0\ref\DTHelperStd.dll
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DTHelperStd\bin\Debug\net7.0\Accord.dll.config
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DTHelperStd\bin\Debug\net7.0\DTHelperStd.deps.json
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DTHelperStd\bin\Debug\net7.0\DTHelperStd.runtimeconfig.json
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DTHelperStd\bin\Debug\net7.0\DTHelperStd.dll
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DTHelperStd\bin\Debug\net7.0\DTHelperStd.pdb
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DTHelperStd\obj\Debug\net7.0\DTHelperStd.csproj.AssemblyReference.cache
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DTHelperStd\obj\Debug\net7.0\DTHelperStd.GeneratedMSBuildEditorConfig.editorconfig
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DTHelperStd\obj\Debug\net7.0\DTHelperStd.AssemblyInfoInputs.cache
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DTHelperStd\obj\Debug\net7.0\DTHelperStd.AssemblyInfo.cs
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DTHelperStd\obj\Debug\net7.0\DTHelperStd.csproj.CoreCompileInputs.cache
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DTHelperStd\obj\Debug\net7.0\DTHelperStd.dll
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DTHelperStd\obj\Debug\net7.0\refint\DTHelperStd.dll
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DTHelperStd\obj\Debug\net7.0\DTHelperStd.pdb
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DTHelperStd\obj\Debug\net7.0\DTHelperStd.genruntimeconfig.cache
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DTHelperStd\obj\Debug\net7.0\ref\DTHelperStd.dll

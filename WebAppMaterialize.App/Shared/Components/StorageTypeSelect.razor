@@ -1,0 +1,63 @@
+﻿@using DataTools;
+@using RecognizerTools;
+@using NLog;
+@inject IJSRuntime JSRuntime;
+
+<div class="input-field col s8">
+    <select ref="StorageTypeElementRef" onchange="@(() => HandleStorageTypeSelect)">
+        @{
+            foreach (var st in ColumnMetadata.ValidStorageTypes)
+            {
+                if (st.ToString() == ColumnMetadata.StorageType.ToString())
+                {
+                    <option value="@st" selected>@ColumnMetadata.StorageType</option>
+                }
+                else
+                {
+                    <option value="@st">@st</option>
+                }
+            }
+        }
+    </select>
+    <label>Storage Type</label>
+</div>
+<div class="input-field col s4">
+    @if (HasSize())
+    {
+        <input id="field-size" type="number" value="@ColumnMetadata.UserSize" min="@ColumnMetadata.UserSize" bind="ColumnMetadata.UserSize" />
+        <label class="active" for="field-size">Size</label>
+    }
+</div>
+
+
+@functions
+{
+    [Parameter] public ColumnMetadata ColumnMetadata { get; set; }
+    private static Logger Logger = LogManager.GetCurrentClassLogger();
+
+
+    ElementReference StorageTypeElementRef;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await StorageTypeElementRef.InitializeSelect(JSRuntime);
+    }
+
+    void HandleStorageTypeSelect(ChangeEventArgs newValue)
+    {
+        ColumnMetadata.SetStorageType((StorageType)Enum.Parse(typeof(StorageType), newValue.Value.ToString()));
+        Logger.Info($"Change Column{ColumnMetadata.ColumnIndex} StorageType to: {newValue.Value.ToString()}");
+    }
+
+    bool HasSize()
+    {
+        if (ColumnMetadata.StorageType == StorageType.Varchar ||
+            ColumnMetadata.StorageType == StorageType.NVarchar ||
+            ColumnMetadata.StorageType == StorageType.Nchar ||
+            ColumnMetadata.StorageType == StorageType.Char)
+        {
+            return true;
+        }
+        return false;
+    }
+}
