@@ -4,8 +4,10 @@
 @using DTHelperStd;
 @inject IJSRuntime JSRuntime
 
+
 <div class="input-field col s12">
-    <select ref="DataTypeElementRef" onchange="@(() => HandleDataTypeSelect)">
+    <label class="active" for="field-name" style="margin-bottom: 5px" >Data Type</label>
+    <select ref="DataTypeElementRef" @onchange="HandleDataTypeSelect" style="display:flex; margin-top:10px">
         @if (CloudDataTools.SecondPassStarted)
         {
             if (ColumnMetadata.DataType == DataType.Custom)
@@ -71,7 +73,7 @@
         }
 
     </select>
-    <label>Data Type</label>
+    
     @if (DistributionInfo != null)
     {
         @foreach (var kvp in DistributionInfo)

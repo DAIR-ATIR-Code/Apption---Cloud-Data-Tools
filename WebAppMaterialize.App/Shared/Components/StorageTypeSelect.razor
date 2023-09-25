@@ -4,7 +4,8 @@
 @inject IJSRuntime JSRuntime;
 
 <div class="input-field col s8">
-    <select ref="StorageTypeElementRef" onchange="@(() => HandleStorageTypeSelect)">
+    <label class="active" for="field-name" style="margin-bottom: 5px">Storage Type</label>
+    <select ref="StorageTypeElementRef" @onchange="HandleStorageTypeSelect" style="display:flex; margin-top:10px">
         @{
             foreach (var st in ColumnMetadata.ValidStorageTypes)
             {
@@ -19,7 +20,6 @@
             }
         }
     </select>
-    <label>Storage Type</label>
 </div>
 <div class="input-field col s4">
     @if (HasSize())

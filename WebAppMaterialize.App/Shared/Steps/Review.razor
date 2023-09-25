@@ -7,7 +7,7 @@
 
 <div class="row" style="margin-bottom: 4px;">
 	<div class="input-field col s4 truncate">
-		<input id="table-name" type="text" style="font-size:30px" value="@CloudDataTools.FileObject.GetSQLTableName()" onchange="@(() => HandleTableNameChange)" />
+		<input id="table-name" type="text" style="font-size:30px" value="@CloudDataTools.FileObject.GetSQLTableName()" @onchange="HandleTableNameChange" />
 		<label class="active" for="table-name">Table Name</label>
 	</div>
 	<div class="col s5" style="margin-top: 20px;">

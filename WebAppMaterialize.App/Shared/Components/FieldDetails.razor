@@ -8,13 +8,13 @@
     <div class="col s6">
 		<div class="row" style="margin-bottom: 0px">
 			<div class="input-field col s10">
-				<input id="field-name" type="text" value="@ColumnMetadata.FieldName" onchange="@(() => HandleFieldNameChange)" />
+				<input id="field-name" type="text" value="@ColumnMetadata.FieldName" @onchange="HandleFieldNameChange" />
 				<label class="active" for="field-name">Field Name</label>
 			</div>
             <div class="input-field s2"  style="vertical-align: middle;">
                 <p>
                     <label>
-                        <input type="checkbox" class="filled-in" bind="ColumnMetadata.UserIsNullable" />
+                        <input type="checkbox" class="filled-in" checked=@ColumnMetadata.UserIsNullable @onchange="eventArgs => { CheckboxClicked(eventArgs.Value); }" />
                         <span>Null</span>
                     </label>
                 </p>
@@ -37,7 +37,7 @@
                 <p>Data Statistics</p>
                 <StatsList StatsData="StatsData" />
             </div>
-        </div>
+        </div> 
     </div>
     <div class="col s6">
         <div class="row">
@@ -64,6 +64,11 @@
     {
         var isThisTrue = true;
     }
+    private void CheckboxClicked(object isChecked)
+    {
+        ColumnMetadata.UserIsNullable = (bool)isChecked;
+        StateHasChanged();
+    }
 
     private void HandleFieldNameChange(ChangeEventArgs changeEventArgs)
     {
@@ -73,7 +78,8 @@
             Logger.Info($"Changed {ColumnMetadata.FieldName} to: {value}");
             ColumnMetadata.SetFieldName(value);
             CloudDataTools.FileObject.Headers[ColumnMetadata.ColumnIndex] = value;
-            OnStateUpdate();
+            //OnStateUpdate();
+            StateHasChanged();
         }
         catch (Exception ex)
         {
