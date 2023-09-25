@@ -28,9 +28,11 @@ namespace WebAppMaterialize.Server
 			var filename = $"DataToolsLog-{DateTime.Today.ToShortDateString()}.txt";
 			var logfile = new NLog.Targets.FileTarget("logfile") { FileName = filename };
 			var logconsole = new NLog.Targets.ConsoleTarget("logconsole");
-            var jsTarget = new NLogJSInteropTarget();
-            jsTarget.Layout = @"${uppercase:${level}} - ${message} ${exception:format=tostring}"; ;
-            config.AddRule(NLog.LogLevel.Trace, NLog.LogLevel.Fatal, jsTarget);
+            
+            //TODOVERIFY
+            //var jsTarget = new NLogJSInteropTarget();
+            //jsTarget.Layout = @"${uppercase:${level}} - ${message} ${exception:format=tostring}"; ;
+            //config.AddRule(NLog.LogLevel.Trace, NLog.LogLevel.Fatal, jsTarget);
             config.AddRule(NLog.LogLevel.Trace, NLog.LogLevel.Fatal, logconsole);
 			config.AddRule(NLog.LogLevel.Trace, NLog.LogLevel.Fatal, logfile);
 

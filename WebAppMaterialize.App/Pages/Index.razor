@@ -1,0 +1,64 @@
+﻿@page "/"
+
+@using WebAppMaterialize.App.Services
+@using WebAppMaterialize.App.Shared.Components
+@using WebAppMaterialize.App.Shared.Steps
+@inject WebAppMaterialize.App.Services.Interfaces.IUIService uiService
+@inject IJSRuntime JSRuntime
+@if(state == null)
+{
+    <h1 style="color: red">AppState not found.</h1>
+}
+
+<div class="row center grey-text text-darken-2">
+    <h3>@state.currentPage.ToString()</h3>
+</div>
+
+<Stepper CurrentState="state.currentPage"/>
+
+<div class="main">
+    @switch (state.currentPage)
+    {
+        case StatePage.Connect:
+            <Connect AnalyzeFiles="AnalyzeFile" PreRequiredObject="state.PreRequiredObject" UIService="state.UIService" />
+            break;
+        case StatePage.Analysis:
+            <Analysis AppState="state" IsProcessFinished="state.IsProcessOneFinished" />
+            break;
+        case StatePage.Review:
+        case StatePage.Classification:
+            <Review CloudDataTools="state.CloudDataTools" AppState="state" UpdateStatePage="state.UpdateStatePage" Reset="state.Reset" SecondAnalysis="async() =>await state.SecondAnalysis()" IsProcessFinished="state.IsProcessTwoFinished" />
+            break;
+        case StatePage.Upload:
+            <Upload UpdateStatePage="state.UpdateStatePage" CloudDataTools="state.CloudDataTools" />
+            break;
+        default:
+            <div>Error: Reached "default" state in index.cshtml. State is: @state.currentPage</div>
+            break;
+    }
+</div>
+
+@functions 
+{
+    private AppState state;
+    private string filename;
+
+    protected override void OnInitialized()
+    {
+        state = new AppState(uiService, JSRuntime);
+        state.OnChange += OnChangeHandler;
+    }
+
+    private async void OnChangeHandler()
+    {
+        await InvokeAsync(() =>
+        {
+            StateHasChanged();
+        });
+    }
+
+    private async Task AnalyzeFile()
+    {
+        await state.AnalyzeFiles();
+    }
+}

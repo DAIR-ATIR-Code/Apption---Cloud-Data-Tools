@@ -1,0 +1,58 @@
+﻿@using WebAppMaterialize.App.Services
+@using DataTools;
+@using System.Data.SqlClient
+@using NLog;
+
+<div>
+    <h4>Target Database:</h4>
+    <div class="input-field row">
+        <input id="connect-string" type="text" onchange="@(() => HandleConnectionStringChange)" />
+        <label for="connect-string">Connect String</label>
+    </div>
+    <div class="row">
+        <button class="btn waves-effect waves-light blue darken-1" onclick="@HandleTestConnectionClick">Test Connection</button>
+    </div>
+    <div class="row">
+        <button class="btn btn-fixed2 grey darken-3" onclick="@(() => UpdateStatePage(StatePage.Connect))">Back</button>
+        <button class="btn btn-fixed3 waves-effect waves-light orange darken-3" onclick="@AnalyzeFiles">Start Analysis</button>
+    </div>
+</div>
+
+
+@functions
+{
+    [Parameter] public Action<string> Log { get; set; }
+    [Parameter] public Action AnalyzeFiles { get; set; }
+    [Parameter] public PreRequiredObject PreRequiredObject { get; set; }
+    [Parameter] public Action<StatePage> UpdateStatePage { get; set; }
+    private static Logger Logger = LogManager.GetCurrentClassLogger();
+
+    void HandleConnectionStringChange(ChangeEventArgs newValue)
+    {
+        PreRequiredObject.ConnectionString = newValue.Value.ToString();
+        Logger.Info($"ConnectString changes to {newValue.Value.ToString()}");
+    }
+
+    void HandleTestConnectionClick()
+    {
+        Logger.Info("Testing the Connection");
+        try
+        {
+            using (var conn = new SqlConnection(PreRequiredObject.ConnectionString))
+            {
+                conn.Open();
+            }
+            Logger.Info($"Connection string tested");
+            // Good connection string
+        }
+        catch (SqlException sqlE)
+        {
+            // Bad connection string
+            Logger.Info($"Invalid connection string {sqlE.ToString()}");
+        }
+        finally
+        {
+
+        }
+    }
+}

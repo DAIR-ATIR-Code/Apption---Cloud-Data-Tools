@@ -15,9 +15,9 @@ namespace WebAppMaterialize.App
 {
     public static class ErrorInterop
     { 
-        public static void Alert(string msg)
+        public static void Alert(IJSRuntime JSRuntime, string msg)
         {
-            JSRuntime.Current.InvokeAsync<object>("alert", msg);
+            JSRuntime.InvokeAsync<object>("alert", msg);
         }
     }
 }

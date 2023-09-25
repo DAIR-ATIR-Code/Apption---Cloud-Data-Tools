@@ -1,0 +1,27 @@
+﻿@using DataTools
+@using NLog
+@using WebAppMaterialize.App.Services
+
+
+<div class="row">
+
+    @if (!IsProcessFinished)
+    {
+        <p>Processing file and analyzing types...</p>
+        Logger.Info("Processing file...");
+    }
+    else
+    {
+        <preloader />
+    }
+    <ProgressBar AppState="AppState" />
+
+</div>
+
+@functions
+{    
+    [Parameter] public AppState AppState { get; set; }
+    [Parameter] public bool IsProcessFinished { get; set; }
+    private static Logger Logger = LogManager.GetCurrentClassLogger();
+
+}

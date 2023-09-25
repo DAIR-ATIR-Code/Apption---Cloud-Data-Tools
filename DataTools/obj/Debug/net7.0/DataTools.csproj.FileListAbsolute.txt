@@ -1,0 +1,36 @@
+C:\2023\cloud-data-tools\DataTools\bin\Debug\net7.0\Accord.dll.config
+C:\2023\cloud-data-tools\DataTools\bin\Debug\net7.0\DataTools.deps.json
+C:\2023\cloud-data-tools\DataTools\bin\Debug\net7.0\DataTools.runtimeconfig.json
+C:\2023\cloud-data-tools\DataTools\bin\Debug\net7.0\DataTools.dll
+C:\2023\cloud-data-tools\DataTools\bin\Debug\net7.0\DataTools.pdb
+C:\2023\cloud-data-tools\DataTools\bin\Debug\net7.0\DTHelperStd.dll
+C:\2023\cloud-data-tools\DataTools\bin\Debug\net7.0\DTHelperStd.pdb
+C:\2023\cloud-data-tools\DataTools\obj\Debug\net7.0\DataTools.csproj.AssemblyReference.cache
+C:\2023\cloud-data-tools\DataTools\obj\Debug\net7.0\DataTools.GeneratedMSBuildEditorConfig.editorconfig
+C:\2023\cloud-data-tools\DataTools\obj\Debug\net7.0\DataTools.AssemblyInfoInputs.cache
+C:\2023\cloud-data-tools\DataTools\obj\Debug\net7.0\DataTools.AssemblyInfo.cs
+C:\2023\cloud-data-tools\DataTools\obj\Debug\net7.0\DataTools.csproj.CoreCompileInputs.cache
+C:\2023\cloud-data-tools\DataTools\obj\Debug\net7.0\DataTools.csproj.CopyComplete
+C:\2023\cloud-data-tools\DataTools\obj\Debug\net7.0\DataTools.dll
+C:\2023\cloud-data-tools\DataTools\obj\Debug\net7.0\refint\DataTools.dll
+C:\2023\cloud-data-tools\DataTools\obj\Debug\net7.0\DataTools.pdb
+C:\2023\cloud-data-tools\DataTools\obj\Debug\net7.0\DataTools.genruntimeconfig.cache
+C:\2023\cloud-data-tools\DataTools\obj\Debug\net7.0\ref\DataTools.dll
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DataTools\bin\Debug\net7.0\Accord.dll.config
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DataTools\bin\Debug\net7.0\DataTools.deps.json
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DataTools\bin\Debug\net7.0\DataTools.runtimeconfig.json
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DataTools\bin\Debug\net7.0\DataTools.dll
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DataTools\bin\Debug\net7.0\DataTools.pdb
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DataTools\bin\Debug\net7.0\DTHelperStd.dll
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DataTools\bin\Debug\net7.0\DTHelperStd.pdb
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DataTools\obj\Debug\net7.0\DataTools.csproj.AssemblyReference.cache
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DataTools\obj\Debug\net7.0\DataTools.GeneratedMSBuildEditorConfig.editorconfig
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DataTools\obj\Debug\net7.0\DataTools.AssemblyInfoInputs.cache
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DataTools\obj\Debug\net7.0\DataTools.AssemblyInfo.cs
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DataTools\obj\Debug\net7.0\DataTools.csproj.CoreCompileInputs.cache
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DataTools\obj\Debug\net7.0\DataTools.csproj.CopyComplete
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DataTools\obj\Debug\net7.0\DataTools.dll
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DataTools\obj\Debug\net7.0\refint\DataTools.dll
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DataTools\obj\Debug\net7.0\DataTools.pdb
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DataTools\obj\Debug\net7.0\DataTools.genruntimeconfig.cache
+C:\OneDrive\OneDrive - Apption\2023\cloud-data-tools\DataTools\obj\Debug\net7.0\ref\DataTools.dll

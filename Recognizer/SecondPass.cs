@@ -165,11 +165,7 @@ namespace RecognizerTools
 			{
 				ReferenceHelper.InitializeReferenceDict();
 			}
-            if (MLHelper.CityPredictionEngine == null)
-            {
-                //MLHelper.InitializeMLModel();
-            }
-
+            
 			foreach (var kvp in FileObject.ColumnMetadata)
 			{
 				ColumnRecognizers[kvp.Value.ColumnIndex - 1] = new ColumnRecognizers(kvp.Value, _container);

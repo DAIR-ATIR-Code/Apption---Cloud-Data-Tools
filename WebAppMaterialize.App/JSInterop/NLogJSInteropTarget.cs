@@ -17,7 +17,12 @@ namespace WebAppMaterialize.App
     public class NLogJSInteropTarget : TargetWithLayout
     {
         private bool _pauseLogging = false;
+		private IJSRuntime _jSRuntime;
 
+		public NLogJSInteropTarget(IJSRuntime jSRuntime)
+        {
+            _jSRuntime = jSRuntime;
+        }
         protected override void Write(LogEventInfo logEvent)
         {
             if (_pauseLogging)
@@ -25,12 +30,13 @@ namespace WebAppMaterialize.App
                 //check early for performance
                 return;
             }
-            WriteToOutput(RenderLogEvent(Layout, logEvent));
+			Task.Run(async () => await WriteToOutput(RenderLogEvent(Layout, logEvent)));
+			
         }
 
-        private void WriteToOutput(string v)
+        private async Task WriteToOutput(string v)
         {
-            JSRuntime.Current.InvokeAsync<object>("log", v);
+            await _jSRuntime.InvokeAsync<object>("log", v);
         }
     }
 }

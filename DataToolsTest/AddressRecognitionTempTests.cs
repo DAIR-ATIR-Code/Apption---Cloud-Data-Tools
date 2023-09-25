@@ -18,6 +18,7 @@ using System.Threading.Tasks.Dataflow;
 using System.Collections.Concurrent;
 using DTHelperStd;
 using RecognizerTools;
+using System.Globalization;
 
 namespace DataToolsTest
 {    
@@ -54,7 +55,7 @@ namespace DataToolsTest
 		{
 			var Lines = File.ReadLines(CityFilePath).Select(a => a.Split(',')).ToList();
 			using (var fileReader = new StreamReader(EnvironicsCsvPath))
-			using (var csv = new CsvReader(fileReader))
+			using (var csv = new CsvReader(fileReader, CultureInfo.InvariantCulture))
 			{
 				csv.Read();
 				csv.ReadHeader();
@@ -74,7 +75,7 @@ namespace DataToolsTest
 			var CityList = CityReader.GetByFieldToList("city");
 
 			using (var fileReader = new StreamReader(EnvironicsCsvPath))
-			using (var csv = new CsvReader(fileReader))
+			using (var csv = new CsvReader(fileReader, CultureInfo.InvariantCulture))
 			{
 				csv.Read();
 				csv.ReadHeader();

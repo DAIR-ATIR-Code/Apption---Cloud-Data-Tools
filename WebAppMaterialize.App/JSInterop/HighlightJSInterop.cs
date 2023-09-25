@@ -13,9 +13,9 @@ namespace WebAppMaterialize.App
 {
     public static class HighlightJSInterop
     {
-        public static Task ChangeScheme(string title)
+        public static async Task ChangeScheme(string title, IJSRuntime JSRuntime)
         {
-            return JSRuntime.Current.InvokeAsync<object>("HighlightJSInterop.changeScheme", title);
+            await JSRuntime.InvokeAsync<object>("HighlightJSInterop.changeScheme", title);
         }
     }
 }
