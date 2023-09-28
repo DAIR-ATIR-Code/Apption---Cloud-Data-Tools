@@ -1,5 +1,0 @@
-C:\2023\cloud-data-tools\DTHelperStd\obj\Debug\netstandard2.0\DTHelperStd.csproj.AssemblyReference.cache
-C:\2023\cloud-data-tools\DTHelperStd\obj\Debug\netstandard2.0\DTHelperStd.GeneratedMSBuildEditorConfig.editorconfig
-C:\2023\cloud-data-tools\DTHelperStd\obj\Debug\netstandard2.0\DTHelperStd.AssemblyInfoInputs.cache
-C:\2023\cloud-data-tools\DTHelperStd\obj\Debug\netstandard2.0\DTHelperStd.AssemblyInfo.cs
-C:\2023\cloud-data-tools\DTHelperStd\obj\Debug\netstandard2.0\DTHelperStd.csproj.CoreCompileInputs.cache

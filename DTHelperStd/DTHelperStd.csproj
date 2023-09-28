@@ -13,7 +13,7 @@
     <PackageReference Include="Accord.Statistics" Version="3.8.2-alpha" />
     <PackageReference Include="Microsoft.ML" Version="3.0.0-preview.23266.6" />
     <PackageReference Include="NLog" Version="5.2.4" />
-    <PackageReference Include="System.Data.SQLite" Version="1.0.118" />
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.113.6" />
   </ItemGroup>
 
 </Project>
