@@ -1,127 +1,127 @@
 {
   "Files": [
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\css\\materialize.min.css",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\css\\materialize.min.css",
       "PackagePath": "staticwebassets\\css\\materialize.min.css"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\css\\site.css",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\css\\styles\\default.css",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\css\\styles\\default.css",
       "PackagePath": "staticwebassets\\css\\styles\\default.css"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\css\\styles\\desktop.ini",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\css\\styles\\desktop.ini",
       "PackagePath": "staticwebassets\\css\\styles\\desktop.ini"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\css\\styles\\grayscale.css",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\css\\styles\\grayscale.css",
       "PackagePath": "staticwebassets\\css\\styles\\grayscale.css"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\css\\styles\\idea.css",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\css\\styles\\idea.css",
       "PackagePath": "staticwebassets\\css\\styles\\idea.css"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\css\\styles\\lightfair.css",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\css\\styles\\lightfair.css",
       "PackagePath": "staticwebassets\\css\\styles\\lightfair.css"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\css\\styles\\tomorrow.css",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\css\\styles\\tomorrow.css",
       "PackagePath": "staticwebassets\\css\\styles\\tomorrow.css"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\img\\User-privacy-icon.svg",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\img\\User-privacy-icon.svg",
       "PackagePath": "staticwebassets\\img\\User-privacy-icon.svg"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\img\\exclamation.png",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\img\\exclamation.png",
       "PackagePath": "staticwebassets\\img\\exclamation.png"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\img\\key-bw.png",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\img\\key-bw.png",
       "PackagePath": "staticwebassets\\img\\key-bw.png"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\img\\key-color.png",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\img\\key-color.png",
       "PackagePath": "staticwebassets\\img\\key-color.png"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\img\\primary_key_active.png",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\img\\primary_key_active.png",
       "PackagePath": "staticwebassets\\img\\primary_key_active.png"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\img\\primary_key_inactive.png",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\img\\primary_key_inactive.png",
       "PackagePath": "staticwebassets\\img\\primary_key_inactive.png"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\img\\questionmark.png",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\img\\questionmark.png",
       "PackagePath": "staticwebassets\\img\\questionmark.png"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\ChartJSInterop.js",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\ChartJSInterop.js",
       "PackagePath": "staticwebassets\\js\\ChartJSInterop.js"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\HelperFunctionInterop.js",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\HelperFunctionInterop.js",
       "PackagePath": "staticwebassets\\js\\HelperFunctionInterop.js"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\HighlightJSInterop.js",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\HighlightJSInterop.js",
       "PackagePath": "staticwebassets\\js\\HighlightJSInterop.js"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\Logger2.js",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\Logger2.js",
       "PackagePath": "staticwebassets\\js\\Logger2.js"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\chart.bundle.min.js",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\chart.bundle.min.js",
       "PackagePath": "staticwebassets\\js\\chart.bundle.min.js"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\clipboard.min.js",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\clipboard.min.js",
       "PackagePath": "staticwebassets\\js\\clipboard.min.js"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\fileInterop.js",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\fileInterop.js",
       "PackagePath": "staticwebassets\\js\\fileInterop.js"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\highlight.pack.js",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\highlight.pack.js",
       "PackagePath": "staticwebassets\\js\\highlight.pack.js"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\jquery.fileupload.js",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\jquery.fileupload.js",
       "PackagePath": "staticwebassets\\js\\jquery.fileupload.js"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\jquery.iframe-transport.js",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\jquery.iframe-transport.js",
       "PackagePath": "staticwebassets\\js\\jquery.iframe-transport.js"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\jquery.min.js",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\jquery.min.js",
       "PackagePath": "staticwebassets\\js\\jquery.min.js"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\logger.js",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\logger.js",
       "PackagePath": "staticwebassets\\js\\logger.js"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\m_init.js",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\m_init.js",
       "PackagePath": "staticwebassets\\js\\m_init.js"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\materialize.min.js",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\materialize.min.js",
       "PackagePath": "staticwebassets\\js\\materialize.min.js"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\toasts.js",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\toasts.js",
       "PackagePath": "staticwebassets\\js\\toasts.js"
     },
     {
-      "Id": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\vendor\\jquery.ui.widget.js",
+      "Id": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\wwwroot\\js\\vendor\\jquery.ui.widget.js",
       "PackagePath": "staticwebassets\\js\\vendor\\jquery.ui.widget.js"
     },
     {

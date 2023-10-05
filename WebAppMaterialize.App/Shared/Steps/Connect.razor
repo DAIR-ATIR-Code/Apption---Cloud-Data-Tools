@@ -13,16 +13,18 @@
 		<h5 style="margin-bottom: 30px;">FileSource</h5>
 		<div class="input-field col s12">
 			<div>
-				<select ref="SeparatorRef" bind="@PreRequiredObject.SeparatorType">
-					@foreach (var separator in (SeparatorType[])Enum.GetValues(typeof(SeparatorType)))
-					{
-						if (separator == PreRequiredObject.SeparatorType)
+				<select ref="SeparatorRef" @onchange="HandleSeparatorSelect" style="display:flex; margin-top:10px">
+					@{
+						foreach (var separator in (SeparatorType[])Enum.GetValues(typeof(SeparatorType)))
 						{
-							<option value="@separator" selected>@PreRequiredObject.SeparatorType</option>
-						}
-						else
-						{
-							<option value="@separator">@separator</option>
+							if (separator == PreRequiredObject.SeparatorType)
+							{
+								<option value="@separator" selected>@PreRequiredObject.SeparatorType</option>
+							}
+							else
+							{
+								<option value="@separator">@separator</option>
+							}
 						}
 					}
 				</select>
@@ -111,6 +113,14 @@
 	string imageData = String.Empty;
 
 	ElementReference SeparatorRef;
+
+	void HandleSeparatorSelect(ChangeEventArgs newValue)
+	{
+		SeparatorType selected;
+		Enum.TryParse<SeparatorType>(newValue.Value.ToString(), out selected);
+		PreRequiredObject.SeparatorType = selected;
+		
+	}
 
 	protected override async Task OnAfterRenderAsync(bool isFirstRender)
 	{

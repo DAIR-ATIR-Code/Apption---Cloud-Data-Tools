@@ -32,6 +32,17 @@ namespace DataToolsTest
 		#region Unit Tests
 
 
+
+		[Fact]
+		public async Task GivenEnum_ThenGetListOfItems()
+		{
+			var count = 0;
+			foreach (var separator in (SeparatorType[])Enum.GetValues(typeof(SeparatorType)))
+			{
+				count++;
+			}
+			Assert.True(count > 0);
+		}
 		[Fact]
 		private void GivenLargeFile_ThenColumnStoreSavedToFilesHeaders()
 		{

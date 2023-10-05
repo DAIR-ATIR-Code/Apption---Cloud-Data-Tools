@@ -20,6 +20,7 @@ using System.Threading.Tasks;
 using DTHelperStd;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using System.Globalization;
 
 namespace WebAppMaterialize.Server.Controllers
 {
@@ -77,7 +78,7 @@ namespace WebAppMaterialize.Server.Controllers
                 {
                     if (MultipartRequestHelper.HasFileContentDisposition(contentDisposition))
                     {
-                        targetFilePath = Path.Combine(tempDir, $"temp_{ DateTime.Today.ToShortDateString()}");
+                        targetFilePath = Path.Combine(tempDir, $"temp_{DateTime.Today.ToString("dd-MM-yyyy", CultureInfo.InvariantCulture)}");
                         using (var targetStream = System.IO.File.Create(targetFilePath))
                         {
                             await section.Body.CopyToAsync(targetStream);

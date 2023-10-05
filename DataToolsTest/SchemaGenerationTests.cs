@@ -30,7 +30,7 @@ namespace DataToolsTest
 			FileAnalyzer = new FileAnalyzer(GeneralCsv, new Preferences(), true, SeparatorType.Comma);
 		}
 
-		
+
 
 		[Fact]
 		private async Task GivenFileAnalyzer_ThenGenerateObjectPopulated()

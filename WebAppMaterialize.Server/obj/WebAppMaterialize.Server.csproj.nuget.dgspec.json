@@ -1,21 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.Server\\WebAppMaterialize.Server.csproj": {}
+    "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.Server\\WebAppMaterialize.Server.csproj": {}
   },
   "projects": {
-    "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DataTools\\DataTools.csproj": {
+    "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\DataTools\\DataTools.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DataTools\\DataTools.csproj",
+        "projectUniqueName": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\DataTools\\DataTools.csproj",
         "projectName": "DataTools",
-        "projectPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DataTools\\DataTools.csproj",
+        "projectPath": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\DataTools\\DataTools.csproj",
         "packagesPath": "C:\\Users\\nbader\\.nuget\\packages\\",
-        "outputPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DataTools\\obj\\",
+        "outputPath": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\DataTools\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\nbader\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -34,8 +33,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DTHelperStd\\DTHelperStd.csproj": {
-                "projectPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DTHelperStd\\DTHelperStd.csproj"
+              "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\DTHelperStd\\DTHelperStd.csproj": {
+                "projectPath": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\DTHelperStd\\DTHelperStd.csproj"
               }
             }
           }
@@ -62,9 +61,9 @@
               "target": "Package",
               "version": "[5.2.4, )"
             },
-            "System.Data.SQLite": {
+            "System.Data.SQLite.Core": {
               "target": "Package",
-              "version": "[1.0.118, )"
+              "version": "[1.0.113.6, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
@@ -107,18 +106,17 @@
         }
       }
     },
-    "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DTHelperStd\\DTHelperStd.csproj": {
+    "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\DTHelperStd\\DTHelperStd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DTHelperStd\\DTHelperStd.csproj",
+        "projectUniqueName": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\DTHelperStd\\DTHelperStd.csproj",
         "projectName": "DTHelperStd",
-        "projectPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DTHelperStd\\DTHelperStd.csproj",
+        "projectPath": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\DTHelperStd\\DTHelperStd.csproj",
         "packagesPath": "C:\\Users\\nbader\\.nuget\\packages\\",
-        "outputPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DTHelperStd\\obj\\",
+        "outputPath": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\DTHelperStd\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\nbader\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -161,9 +159,9 @@
               "target": "Package",
               "version": "[5.2.4, )"
             },
-            "System.Data.SQLite": {
+            "System.Data.SQLite.Core": {
               "target": "Package",
-              "version": "[1.0.118, )"
+              "version": "[1.0.113.6, )"
             }
           },
           "imports": [
@@ -186,18 +184,17 @@
         }
       }
     },
-    "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\Recognizer\\RecognizerTools.csproj": {
+    "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\Recognizer\\RecognizerTools.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\Recognizer\\RecognizerTools.csproj",
+        "projectUniqueName": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\Recognizer\\RecognizerTools.csproj",
         "projectName": "RecognizerTools",
-        "projectPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\Recognizer\\RecognizerTools.csproj",
+        "projectPath": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\Recognizer\\RecognizerTools.csproj",
         "packagesPath": "C:\\Users\\nbader\\.nuget\\packages\\",
-        "outputPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\Recognizer\\obj\\",
+        "outputPath": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\Recognizer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\nbader\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -216,8 +213,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DataTools\\DataTools.csproj": {
-                "projectPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DataTools\\DataTools.csproj"
+              "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\DataTools\\DataTools.csproj": {
+                "projectPath": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\DataTools\\DataTools.csproj"
               }
             }
           }
@@ -240,9 +237,9 @@
               "target": "Package",
               "version": "[5.2.4, )"
             },
-            "System.Data.SQLite": {
+            "System.Data.SQLite.Core": {
               "target": "Package",
-              "version": "[1.0.118, )"
+              "version": "[1.0.113.6, )"
             },
             "System.Reactive": {
               "target": "Package",
@@ -277,18 +274,17 @@
         }
       }
     },
-    "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\WebAppMaterialize.App.csproj": {
+    "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\WebAppMaterialize.App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\WebAppMaterialize.App.csproj",
+        "projectUniqueName": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\WebAppMaterialize.App.csproj",
         "projectName": "WebAppMaterialize.App",
-        "projectPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\WebAppMaterialize.App.csproj",
+        "projectPath": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\WebAppMaterialize.App.csproj",
         "packagesPath": "C:\\Users\\nbader\\.nuget\\packages\\",
-        "outputPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\obj\\",
+        "outputPath": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\nbader\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -307,11 +303,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DataTools\\DataTools.csproj": {
-                "projectPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DataTools\\DataTools.csproj"
+              "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\DataTools\\DataTools.csproj": {
+                "projectPath": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\DataTools\\DataTools.csproj"
               },
-              "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\Recognizer\\RecognizerTools.csproj": {
-                "projectPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\Recognizer\\RecognizerTools.csproj"
+              "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\Recognizer\\RecognizerTools.csproj": {
+                "projectPath": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\Recognizer\\RecognizerTools.csproj"
               }
             }
           }
@@ -341,6 +337,10 @@
             "NLog": {
               "target": "Package",
               "version": "[5.2.4, )"
+            },
+            "System.Data.SQLite.Core": {
+              "target": "Package",
+              "version": "[1.0.113.6, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
@@ -374,18 +374,17 @@
         }
       }
     },
-    "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.Server\\WebAppMaterialize.Server.csproj": {
+    "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.Server\\WebAppMaterialize.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.Server\\WebAppMaterialize.Server.csproj",
+        "projectUniqueName": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.Server\\WebAppMaterialize.Server.csproj",
         "projectName": "WebAppMaterialize.Server",
-        "projectPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.Server\\WebAppMaterialize.Server.csproj",
+        "projectPath": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.Server\\WebAppMaterialize.Server.csproj",
         "packagesPath": "C:\\Users\\nbader\\.nuget\\packages\\",
-        "outputPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.Server\\obj\\",
+        "outputPath": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\nbader\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -404,11 +403,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DataTools\\DataTools.csproj": {
-                "projectPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\DataTools\\DataTools.csproj"
+              "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\DataTools\\DataTools.csproj": {
+                "projectPath": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\DataTools\\DataTools.csproj"
               },
-              "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\WebAppMaterialize.App.csproj": {
-                "projectPath": "C:\\OneDrive\\OneDrive - Apption\\2023\\cloud-data-tools\\WebAppMaterialize.App\\WebAppMaterialize.App.csproj"
+              "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\WebAppMaterialize.App.csproj": {
+                "projectPath": "C:\\OneDrive\\OneDrive - Apption\\code\\2023\\canarie\\cloud-data-tools\\WebAppMaterialize.App\\WebAppMaterialize.App.csproj"
               }
             }
           }
