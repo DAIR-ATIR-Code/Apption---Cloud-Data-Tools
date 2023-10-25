@@ -17,4 +17,4 @@ services:
     container_name: adat
     restart: always
     ports:
-      - "8000:8000"
+      - "80:8000"
